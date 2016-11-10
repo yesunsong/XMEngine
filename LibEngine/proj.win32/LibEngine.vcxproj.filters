@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{ef17af81-9524-46f2-8b64-7872c6c34ad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{3aabbdea-d313-4193-9b5b-1bc5af5b246f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="encryption">
+      <UniqueIdentifier>{276ff091-6c64-4c20-829a-229c92642ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="math">
+      <UniqueIdentifier>{e0fb3b99-e341-4cb5-addf-faf4880e4e1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{cb259f57-f47e-4914-a75a-85c57a400680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern">
+      <UniqueIdentifier>{47d38308-0f91-46f6-b797-0efe5136ee75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="physics">
+      <UniqueIdentifier>{477dcd7e-676f-4a60-affd-4b54888075c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{1a38476b-404b-41ff-be7e-1d2ee04dffe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern\command">
+      <UniqueIdentifier>{238bb95a-248e-4a3c-b1a5-7eb6fae90a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern\mvc">
+      <UniqueIdentifier>{468bbee2-a701-40b0-8ae5-2204742b8003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pattern\state">
+      <UniqueIdentifier>{8df98688-1914-4258-8efc-11864772e380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\json">
+      <UniqueIdentifier>{0f52ee5c-f73f-46b2-866e-8446ca91282c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data\xml">
+      <UniqueIdentifier>{cadc8361-2bae-4d7e-945f-7ed971ed0432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test">
+      <UniqueIdentifier>{dedcd368-4c49-4c39-9273-7be613166197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{893b9723-9d8b-4877-8605-d12ebea385e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{a1335364-4ddf-4183-9752-c47a7c266bea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\base">
+      <UniqueIdentifier>{d0e2700b-76ce-4733-80f5-fde8a6b67e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\extensions">
+      <UniqueIdentifier>{0af61ecd-64d5-4d09-b329-772dc6efb8a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data\xml\XMLParser.h">
+      <Filter>data\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\data\json\JsonParser.h">
+      <Filter>data\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\audio\HNAudioEngine.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\test\WireframeOnOff.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\GraphicsUtils.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\ACheckBox.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\AControlButton.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\ASlider.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\ATableView.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\ATableViewDelegate.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\AUIButton.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\BTableView.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\HNEditBox.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\HNLayer.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\HNLayerColor.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\HNNode.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\HNScene.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\base\HNSprite.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\ClipSprite.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\DropdownList.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\Effect.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\HNDialogBase.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\HNShake.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\LoadingLayer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\TextSprite.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\UIGoldRain.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\UserHead.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNUIExport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\test\HNLog.h">
+      <Filter>test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data\xml\XMLParser.cpp">
+      <Filter>data\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\data\json\JsonParser.cpp">
+      <Filter>data\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\audio\HNAudioEngine.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test\WireframeOnOff.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\GraphicsUtils.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\ACheckBox.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\AControlButton.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\ASlider.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\ATableView.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\ATableViewDelegate.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\AUIButton.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\BTableView.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\HNEditBox.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\HNLayer.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\HNLayerColor.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\HNNode.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\HNScene.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\base\HNSprite.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\ClipSprite.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\DropdownList.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\Effect.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\HNDialogBase.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\HNShake.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\LoadingLayer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\TextSprite.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\UIGoldRain.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\UserHead.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test\HNLog.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
