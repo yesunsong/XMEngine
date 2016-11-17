@@ -14,6 +14,7 @@
     <ProjectGuid>{9B20090A-EC06-41D4-BB51-373A3B39709C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LibEngine</RootNamespace>
+    <ProjectName>LibXMEngine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -32,13 +33,14 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2d_headers.props" />
-    <Import Project="..\..\..\..\cocos2d\cocos\2d\cocos2dx.props" />
-  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\LibEngineTest\cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\LibEngineTest\cocos2d\cocos\2d\cocos2dx.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="..\..\LibEngineTest\cocos2d\cocos\2d\cocos2d_headers.props" />
+    <Import Project="..\..\LibEngineTest\cocos2d\cocos\2d\cocos2dx.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -53,7 +55,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>..;..\..;..\..\LibHNNet;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\..;..\..\..\LibHNNet;$(EngineRoot)extensions;$(EngineRoot)cocos\audio\include;$(EngineRoot);..\..\..\LibHNLobby;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -83,9 +85,25 @@
     <ClInclude Include="..\audio\HNAudioEngine.h" />
     <ClInclude Include="..\data\json\JsonParser.h" />
     <ClInclude Include="..\data\xml\XMLParser.h" />
+    <ClInclude Include="..\globel\ApplicationMacro.h" />
+    <ClInclude Include="..\globel\HNCommonMarco.h" />
+    <ClInclude Include="..\HNBaseType.h" />
+    <ClInclude Include="..\HNEngineExport.h" />
+    <ClInclude Include="..\HNNetworkExport.h" />
     <ClInclude Include="..\HNUIExport.h" />
+    <ClInclude Include="..\network\http\HNHttp.h" />
+    <ClInclude Include="..\network\socket\HNSocket.h" />
+    <ClInclude Include="..\network\socket\HNSocketEventDelegate.h" />
+    <ClInclude Include="..\network\socket\HNSocketLogic.h" />
+    <ClInclude Include="..\network\socket\HNSocketMessage.h" />
+    <ClInclude Include="..\network\socket\HNSocketMessageDelegate.h" />
+    <ClInclude Include="..\network\socket\HNSocketProtocolData.h" />
+    <ClInclude Include="..\network\socket\HNSocketSelector.h" />
+    <ClInclude Include="..\network\socket\HNSocketThread.h" />
     <ClInclude Include="..\render\GraphicsUtils.h" />
+    <ClInclude Include="..\test\HNConverCode.h" />
     <ClInclude Include="..\test\HNLog.h" />
+    <ClInclude Include="..\test\HNSingleAutoPtr.h" />
     <ClInclude Include="..\test\WireframeOnOff.h" />
     <ClInclude Include="..\ui\base\ACheckBox.h" />
     <ClInclude Include="..\ui\base\AControlButton.h" />
@@ -106,9 +124,11 @@
     <ClInclude Include="..\ui\extensions\HNDialogBase.h" />
     <ClInclude Include="..\ui\extensions\HNShake.h" />
     <ClInclude Include="..\ui\extensions\LoadingLayer.h" />
+    <ClInclude Include="..\ui\extensions\MyProgressTimer.h" />
     <ClInclude Include="..\ui\extensions\TextSprite.h" />
     <ClInclude Include="..\ui\extensions\UIGoldRain.h" />
     <ClInclude Include="..\ui\extensions\UserHead.h" />
+    <ClInclude Include="..\utils\Tools.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -116,7 +136,14 @@
     <ClCompile Include="..\audio\HNAudioEngine.cpp" />
     <ClCompile Include="..\data\json\JsonParser.cpp" />
     <ClCompile Include="..\data\xml\XMLParser.cpp" />
+    <ClCompile Include="..\network\http\HNHttp.cpp" />
+    <ClCompile Include="..\network\socket\HNSocket.cpp" />
+    <ClCompile Include="..\network\socket\HNSocketLogic.cpp" />
+    <ClCompile Include="..\network\socket\HNSocketMessage.cpp" />
+    <ClCompile Include="..\network\socket\HNSocketProtocolData.cpp" />
+    <ClCompile Include="..\network\socket\HNSocketThread.cpp" />
     <ClCompile Include="..\render\GraphicsUtils.cpp" />
+    <ClCompile Include="..\test\HNConverCode.cpp" />
     <ClCompile Include="..\test\HNLog.cpp" />
     <ClCompile Include="..\test\WireframeOnOff.cpp" />
     <ClCompile Include="..\ui\base\ACheckBox.cpp" />
@@ -138,9 +165,11 @@
     <ClCompile Include="..\ui\extensions\HNDialogBase.cpp" />
     <ClCompile Include="..\ui\extensions\HNShake.cpp" />
     <ClCompile Include="..\ui\extensions\LoadingLayer.cpp" />
+    <ClCompile Include="..\ui\extensions\MyProgressTimer.cpp" />
     <ClCompile Include="..\ui\extensions\TextSprite.cpp" />
     <ClCompile Include="..\ui\extensions\UIGoldRain.cpp" />
     <ClCompile Include="..\ui\extensions\UserHead.cpp" />
+    <ClCompile Include="..\utils\Tools.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

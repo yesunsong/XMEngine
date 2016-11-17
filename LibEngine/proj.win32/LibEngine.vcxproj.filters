@@ -67,6 +67,18 @@
     <Filter Include="ui\extensions">
       <UniqueIdentifier>{0af61ecd-64d5-4d09-b329-772dc6efb8a4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{76282a5b-86aa-4ba3-b02c-e069c0cd5a8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="globel">
+      <UniqueIdentifier>{5e0bf27c-5ae0-490b-b401-e62a5ec53b7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\socket">
+      <UniqueIdentifier>{f52f53db-c067-4fd7-8520-d8d89e695a43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\http">
+      <UniqueIdentifier>{f9b51638-2909-4cdd-83be-ca9ae0380e76}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -162,6 +174,60 @@
     <ClInclude Include="..\test\HNLog.h">
       <Filter>test</Filter>
     </ClInclude>
+    <ClInclude Include="..\test\HNConverCode.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\test\HNSingleAutoPtr.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utils\Tools.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ui\extensions\MyProgressTimer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\globel\ApplicationMacro.h">
+      <Filter>globel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNBaseType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocket.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketEventDelegate.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketLogic.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketMessage.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketMessageDelegate.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketProtocolData.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketSelector.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\socket\HNSocketThread.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\network\http\HNHttp.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNNetworkExport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HNEngineExport.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\globel\HNCommonMarco.h">
+      <Filter>globel</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -250,6 +316,33 @@
     </ClCompile>
     <ClCompile Include="..\test\HNLog.cpp">
       <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\test\HNConverCode.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utils\Tools.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ui\extensions\MyProgressTimer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\socket\HNSocket.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\socket\HNSocketLogic.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\socket\HNSocketMessage.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\socket\HNSocketProtocolData.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\socket\HNSocketThread.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\network\http\HNHttp.cpp">
+      <Filter>network\http</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
