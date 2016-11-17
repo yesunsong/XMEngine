@@ -1,9 +1,8 @@
 ﻿#ifndef __NH_HNLOG_H__
 #define __NH_HNLOG_H__
 
-#include "HNCommon/HNConverCode.h"
-
 #include "cocos2d.h"
+#include "HNConverCode.h"
 USING_NS_CC;
 
 // cocos2d debug

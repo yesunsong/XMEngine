@@ -1,5 +1,6 @@
 ﻿#include "stdafx.h"
-#include "HNUIExport.h"
+#include "AControlButton.h"
+#include "test\WireframeOnOff.h"
 
 namespace HN {
 AControlButton::AControlButton() :
@@ -38,7 +39,7 @@ AControlButton* AControlButton::create(cocos2d::ui::Scale9Sprite* sprite) {
 
 AControlButton* AControlButton::create(Node* label, cocos2d::ui::Scale9Sprite* backgroundSprite) {
     AControlButton *pRet = new (std::nothrow) AControlButton();
-    if (pRet&& pRet->initWithLabelAndBackgroundSprite(label, backgroundSprite)) {
+    if (pRet&& pRet->initWithLabelAndBackgroundSprite(label, backgroundSprite,true)) {
         pRet->autorelease();
         return pRet;
     }

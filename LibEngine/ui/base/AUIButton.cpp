@@ -45,22 +45,22 @@ bool AUIButton::init(const std::string& normalImage,
 
 void AUIButton::onPressStateChangedToNormal() {
     Button::onPressStateChangedToNormal();
-    this->setScale(_normalTextureScaleXInSize, _normalTextureScaleYInSize);
+    //this->setScale(_normalTextureScaleXInSize, _normalTextureScaleYInSize);
     for (int i = 0; i < _children.size(); i++) {
         Node* node = _children.at(i);
-        node->setScale(_normalTextureScaleXInSize, _normalTextureScaleYInSize);
+        //node->setScale(_normalTextureScaleXInSize, _normalTextureScaleYInSize);
     }
 }
 
 void AUIButton::onPressStateChangedToPressed() {
     Button::onPressStateChangedToPressed();
-    this->setScale(_pressedTextureScaleXInSize + _zoomScale, _pressedTextureScaleYInSize + _zoomScale);
+    //this->setScale(_pressedTextureScaleXInSize + _zoomScale, _pressedTextureScaleYInSize + _zoomScale);
     for (int i = 0; i < _children.size(); i++) {
         Node* node = _children.at(i);
-        Action *zoomAction = ScaleTo::create(0.05f,
-                                             _pressedTextureScaleXInSize + _zoomScale,
-                                             _pressedTextureScaleYInSize + _zoomScale);
-        node->runAction(zoomAction);
+        //Action *zoomAction = ScaleTo::create(0.05f,
+        //	_pressedTextureScaleXInSize + _zoomScale,
+        //	_pressedTextureScaleYInSize + _zoomScale);
+        //node->runAction(zoomAction);
     }
 }
 
@@ -76,14 +76,14 @@ void AUIButton::gray() {
     GraphicsUtils::gray(_children);
     _buttonNormalRenderer->setState(cocos2d::ui::Scale9Sprite::State::GRAY);
     _buttonClickedRenderer->setState(cocos2d::ui::Scale9Sprite::State::GRAY);
-    _buttonDisableRenderer->setState(cocos2d::ui::Scale9Sprite::State::GRAY);
+    _buttonDisabledRenderer->setState(cocos2d::ui::Scale9Sprite::State::GRAY);
 }
 
 void AUIButton::recovery() {
     GraphicsUtils::recovery(_children);
     _buttonNormalRenderer->setState(cocos2d::ui::Scale9Sprite::State::NORMAL);
     _buttonClickedRenderer->setState(cocos2d::ui::Scale9Sprite::State::NORMAL);
-    _buttonDisableRenderer->setState(cocos2d::ui::Scale9Sprite::State::NORMAL);
+    _buttonDisabledRenderer->setState(cocos2d::ui::Scale9Sprite::State::NORMAL);
 }
 
 void AUIButton::setTitle(const std::string &imageFileName) {

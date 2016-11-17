@@ -75,7 +75,7 @@ void HNEditBox::setPasswordEnabled(bool enable) {
     if (enable) {
         _editBoxInputFlag= EditBox::InputFlag::PASSWORD;
     } else {
-        _editBoxInputFlag= EditBox::InputFlag::INTIAL_CAPS_ALL_CHARACTERS;
+        _editBoxInputFlag = EditBox::InputFlag::INITIAL_CAPS_ALL_CHARACTERS;
     }
     this->setInputFlag(_editBoxInputFlag);
 }

@@ -1,6 +1,7 @@
 ﻿#include "stdafx.h"
 #include "HNLayer.h"
 #include "HNLayerColor.h"
+#include "globel/ApplicationMacro.h"
 
 namespace HN {
 HNLayer::HNLayer(void) : _drawRect(false), _colorLayer(nullptr), _opacity(0) {
@@ -48,7 +49,7 @@ void HNLayer::setBackGroundImage(const std::string &name) {
     //背景
     auto loadingBG = Sprite::create(name.c_str());
     loadingBG->setPosition(
-        Vec2(Visible_Size.width / 2, Visible_Size.height / 2)); // visibleOrigin +
+        Vec2(VISIBLE_SIZE.width / 2, VISIBLE_SIZE.height / 2)); // visibleOrigin +
     float _xScale = visibleSize.width / loadingBG->getContentSize().width;
     float _yScale = visibleSize.height / loadingBG->getContentSize().height;
     loadingBG->setScaleX(_xScale);

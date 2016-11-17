@@ -12,10 +12,6 @@ using namespace ui;
 using namespace std;
 using namespace HN;
 
-#define WIN_SIZE Director::getInstance()->getWinSize()
-#define Visible_Size Director::getInstance()->getVisibleSize()
-#define Visible_Origin Director::getInstance()->getVisibleOrigin()
-
 namespace HN {
 
 class HNLayer : public Layer {

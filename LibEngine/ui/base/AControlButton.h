@@ -5,7 +5,7 @@
 #include "ui/CocosGUI.h"
 #include "extensions/cocos-ext.h"
 USING_NS_CC;
-using namespace extension;
+using namespace cocos2d::extension;
 
 namespace HN {
 class AControlButton :public ControlButton {
