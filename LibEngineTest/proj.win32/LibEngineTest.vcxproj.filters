@@ -10,6 +10,15 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\framework">
+      <UniqueIdentifier>{fdd7d018-935c-4f9a-a64c-669ed880b44c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test">
+      <UniqueIdentifier>{592d64ce-fe55-4732-9d3a-f4312dffb94d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\SpriteTest">
+      <UniqueIdentifier>{65bcfc69-b44d-44da-aa7c-29ec76656ee1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,6 +30,21 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\framework\BaseTest.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\framework\controller.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\framework\testBasic.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\framework\VisibleRect.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\SpriteTest\SpriteTest.cpp">
+      <Filter>src\test\SpriteTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -31,6 +55,27 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\BaseTest.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\controller.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\testBasic.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\testResource.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\tests.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\VisibleRect.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\SpriteTest\SpriteTest.h">
+      <Filter>src\test\SpriteTest</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
