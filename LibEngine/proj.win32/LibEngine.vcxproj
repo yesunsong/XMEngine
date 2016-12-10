@@ -49,13 +49,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>..;..\..;..\..\..\LibHNNet;$(EngineRoot)extensions;$(EngineRoot)cocos\audio\include;$(EngineRoot);..\..\..\LibHNLobby;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..;..\..;..\..\..\LibHNNet;$(EngineRoot)extensions;$(EngineRoot)cocos\audio\include;$(EngineRoot);..\..\..\LibHNLobby;$(ProjectDir)..\Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -82,94 +82,106 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\audio\HNAudioEngine.h" />
-    <ClInclude Include="..\data\json\JsonParser.h" />
-    <ClInclude Include="..\data\xml\XMLParser.h" />
-    <ClInclude Include="..\globel\ApplicationMacro.h" />
-    <ClInclude Include="..\globel\HNCommonMarco.h" />
-    <ClInclude Include="..\HNBaseType.h" />
-    <ClInclude Include="..\HNEngineExport.h" />
+    <ClInclude Include="..\Classes\audio\HNAudioEngine.h" />
+    <ClInclude Include="..\Classes\data\json\JsonParser.h" />
+    <ClInclude Include="..\Classes\data\xml\XMLParser.h" />
+    <ClInclude Include="..\Classes\globel\ApplicationMacro.h" />
+    <ClInclude Include="..\Classes\globel\HNCommonMarco.h" />
+    <ClInclude Include="..\Classes\HNBaseType.h" />
+    <ClInclude Include="..\Classes\HNEngineExport.h" />
+    <ClInclude Include="..\Classes\HNUIExport.h" />
+    <ClInclude Include="..\Classes\network\http\HNHttp.h" />
+    <ClInclude Include="..\Classes\network\socket\HNNetMessageHead.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocket.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketEventDelegate.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketLogic.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketMessage.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketMessageDelegate.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketProtocolData.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketSelector.h" />
+    <ClInclude Include="..\Classes\network\socket\HNSocketThread.h" />
+    <ClInclude Include="..\Classes\render\GraphicsUtils.h" />
+    <ClInclude Include="..\Classes\test\HNConverCode.h" />
+    <ClInclude Include="..\Classes\test\HNLog.h" />
+    <ClInclude Include="..\Classes\test\HNSingleAutoPtr.h" />
+    <ClInclude Include="..\Classes\test\WireframeOnOff.h" />
+    <ClInclude Include="..\Classes\tmp\FontSize.h" />
+    <ClInclude Include="..\Classes\tmp\HNBaseCommand.h" />
+    <ClInclude Include="..\Classes\tmp\HNCommonMarco.h" />
+    <ClInclude Include="..\Classes\tmp\HNComStruct.h" />
+    <ClInclude Include="..\Classes\tmp\HNMemoryPool.h" />
+    <ClInclude Include="..\Classes\tmp\HNPlatformMessage.h" />
+    <ClInclude Include="..\Classes\tmp\HNRoomMessage.h" />
+    <ClInclude Include="..\Classes\tmp\PlatformConfig.h" />
+    <ClInclude Include="..\Classes\ui\base\ACheckBox.h" />
+    <ClInclude Include="..\Classes\ui\base\AControlButton.h" />
+    <ClInclude Include="..\Classes\ui\base\ASlider.h" />
+    <ClInclude Include="..\Classes\ui\base\ATableView.h" />
+    <ClInclude Include="..\Classes\ui\base\ATableViewDelegate.h" />
+    <ClInclude Include="..\Classes\ui\base\AUIButton.h" />
+    <ClInclude Include="..\Classes\ui\base\BTableView.h" />
+    <ClInclude Include="..\Classes\ui\base\HNEditBox.h" />
+    <ClInclude Include="..\Classes\ui\base\HNLayer.h" />
+    <ClInclude Include="..\Classes\ui\base\HNLayerColor.h" />
+    <ClInclude Include="..\Classes\ui\base\HNNode.h" />
+    <ClInclude Include="..\Classes\ui\base\HNScene.h" />
+    <ClInclude Include="..\Classes\ui\base\HNSprite.h" />
+    <ClInclude Include="..\Classes\ui\extensions\ClipSprite.h" />
+    <ClInclude Include="..\Classes\ui\extensions\Effect.h" />
+    <ClInclude Include="..\Classes\ui\extensions\HNDialogBase.h" />
+    <ClInclude Include="..\Classes\ui\extensions\HNShake.h" />
+    <ClInclude Include="..\Classes\ui\extensions\LoadingLayer.h" />
+    <ClInclude Include="..\Classes\ui\extensions\MyProgressTimer.h" />
+    <ClInclude Include="..\Classes\ui\extensions\TextSprite.h" />
+    <ClInclude Include="..\Classes\ui\extensions\TextureLayer.h" />
+    <ClInclude Include="..\Classes\ui\extensions\UIGoldRain.h" />
+    <ClInclude Include="..\Classes\ui\extensions\UserHead.h" />
+    <ClInclude Include="..\Classes\utils\Tools.h" />
     <ClInclude Include="..\HNNetworkExport.h" />
-    <ClInclude Include="..\HNUIExport.h" />
-    <ClInclude Include="..\network\http\HNHttp.h" />
-    <ClInclude Include="..\network\socket\HNSocket.h" />
-    <ClInclude Include="..\network\socket\HNSocketEventDelegate.h" />
-    <ClInclude Include="..\network\socket\HNSocketLogic.h" />
-    <ClInclude Include="..\network\socket\HNSocketMessage.h" />
-    <ClInclude Include="..\network\socket\HNSocketMessageDelegate.h" />
-    <ClInclude Include="..\network\socket\HNSocketProtocolData.h" />
-    <ClInclude Include="..\network\socket\HNSocketSelector.h" />
-    <ClInclude Include="..\network\socket\HNSocketThread.h" />
-    <ClInclude Include="..\render\GraphicsUtils.h" />
-    <ClInclude Include="..\test\HNConverCode.h" />
-    <ClInclude Include="..\test\HNLog.h" />
-    <ClInclude Include="..\test\HNSingleAutoPtr.h" />
-    <ClInclude Include="..\test\WireframeOnOff.h" />
-    <ClInclude Include="..\ui\base\ACheckBox.h" />
-    <ClInclude Include="..\ui\base\AControlButton.h" />
-    <ClInclude Include="..\ui\base\ASlider.h" />
-    <ClInclude Include="..\ui\base\ATableView.h" />
-    <ClInclude Include="..\ui\base\ATableViewDelegate.h" />
-    <ClInclude Include="..\ui\base\AUIButton.h" />
-    <ClInclude Include="..\ui\base\BTableView.h" />
-    <ClInclude Include="..\ui\base\HNEditBox.h" />
-    <ClInclude Include="..\ui\base\HNLayer.h" />
-    <ClInclude Include="..\ui\base\HNLayerColor.h" />
-    <ClInclude Include="..\ui\base\HNNode.h" />
-    <ClInclude Include="..\ui\base\HNScene.h" />
-    <ClInclude Include="..\ui\base\HNSprite.h" />
-    <ClInclude Include="..\ui\extensions\ClipSprite.h" />
-    <ClInclude Include="..\ui\extensions\DropdownList.h" />
-    <ClInclude Include="..\ui\extensions\Effect.h" />
-    <ClInclude Include="..\ui\extensions\HNDialogBase.h" />
-    <ClInclude Include="..\ui\extensions\HNShake.h" />
-    <ClInclude Include="..\ui\extensions\LoadingLayer.h" />
-    <ClInclude Include="..\ui\extensions\MyProgressTimer.h" />
-    <ClInclude Include="..\ui\extensions\TextSprite.h" />
-    <ClInclude Include="..\ui\extensions\UIGoldRain.h" />
-    <ClInclude Include="..\ui\extensions\UserHead.h" />
-    <ClInclude Include="..\utils\Tools.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\audio\HNAudioEngine.cpp" />
-    <ClCompile Include="..\data\json\JsonParser.cpp" />
-    <ClCompile Include="..\data\xml\XMLParser.cpp" />
-    <ClCompile Include="..\network\http\HNHttp.cpp" />
-    <ClCompile Include="..\network\socket\HNSocket.cpp" />
-    <ClCompile Include="..\network\socket\HNSocketLogic.cpp" />
-    <ClCompile Include="..\network\socket\HNSocketMessage.cpp" />
-    <ClCompile Include="..\network\socket\HNSocketProtocolData.cpp" />
-    <ClCompile Include="..\network\socket\HNSocketThread.cpp" />
-    <ClCompile Include="..\render\GraphicsUtils.cpp" />
-    <ClCompile Include="..\test\HNConverCode.cpp" />
-    <ClCompile Include="..\test\HNLog.cpp" />
-    <ClCompile Include="..\test\WireframeOnOff.cpp" />
-    <ClCompile Include="..\ui\base\ACheckBox.cpp" />
-    <ClCompile Include="..\ui\base\AControlButton.cpp" />
-    <ClCompile Include="..\ui\base\ASlider.cpp" />
-    <ClCompile Include="..\ui\base\ATableView.cpp" />
-    <ClCompile Include="..\ui\base\ATableViewDelegate.cpp" />
-    <ClCompile Include="..\ui\base\AUIButton.cpp" />
-    <ClCompile Include="..\ui\base\BTableView.cpp" />
-    <ClCompile Include="..\ui\base\HNEditBox.cpp" />
-    <ClCompile Include="..\ui\base\HNLayer.cpp" />
-    <ClCompile Include="..\ui\base\HNLayerColor.cpp" />
-    <ClCompile Include="..\ui\base\HNNode.cpp" />
-    <ClCompile Include="..\ui\base\HNScene.cpp" />
-    <ClCompile Include="..\ui\base\HNSprite.cpp" />
-    <ClCompile Include="..\ui\extensions\ClipSprite.cpp" />
-    <ClCompile Include="..\ui\extensions\DropdownList.cpp" />
-    <ClCompile Include="..\ui\extensions\Effect.cpp" />
-    <ClCompile Include="..\ui\extensions\HNDialogBase.cpp" />
-    <ClCompile Include="..\ui\extensions\HNShake.cpp" />
-    <ClCompile Include="..\ui\extensions\LoadingLayer.cpp" />
-    <ClCompile Include="..\ui\extensions\MyProgressTimer.cpp" />
-    <ClCompile Include="..\ui\extensions\TextSprite.cpp" />
-    <ClCompile Include="..\ui\extensions\UIGoldRain.cpp" />
-    <ClCompile Include="..\ui\extensions\UserHead.cpp" />
-    <ClCompile Include="..\utils\Tools.cpp" />
+    <ClCompile Include="..\Classes\audio\HNAudioEngine.cpp" />
+    <ClCompile Include="..\Classes\data\json\JsonParser.cpp" />
+    <ClCompile Include="..\Classes\data\xml\XMLParser.cpp" />
+    <ClCompile Include="..\Classes\network\http\HNHttp.cpp" />
+    <ClCompile Include="..\Classes\network\socket\HNSocket.cpp" />
+    <ClCompile Include="..\Classes\network\socket\HNSocketLogic.cpp" />
+    <ClCompile Include="..\Classes\network\socket\HNSocketMessage.cpp" />
+    <ClCompile Include="..\Classes\network\socket\HNSocketProtocolData.cpp" />
+    <ClCompile Include="..\Classes\network\socket\HNSocketThread.cpp" />
+    <ClCompile Include="..\Classes\render\GraphicsUtils.cpp" />
+    <ClCompile Include="..\Classes\test\HNConverCode.cpp" />
+    <ClCompile Include="..\Classes\test\HNLog.cpp" />
+    <ClCompile Include="..\Classes\test\WireframeOnOff.cpp" />
+    <ClCompile Include="..\Classes\tmp\HNBaseCommand.cpp" />
+    <ClCompile Include="..\Classes\tmp\HNMemoryPool.cpp" />
+    <ClCompile Include="..\Classes\tmp\PlatformConfig.cpp" />
+    <ClCompile Include="..\Classes\ui\base\ACheckBox.cpp" />
+    <ClCompile Include="..\Classes\ui\base\AControlButton.cpp" />
+    <ClCompile Include="..\Classes\ui\base\ASlider.cpp" />
+    <ClCompile Include="..\Classes\ui\base\ATableView.cpp" />
+    <ClCompile Include="..\Classes\ui\base\ATableViewDelegate.cpp" />
+    <ClCompile Include="..\Classes\ui\base\AUIButton.cpp" />
+    <ClCompile Include="..\Classes\ui\base\BTableView.cpp" />
+    <ClCompile Include="..\Classes\ui\base\HNEditBox.cpp" />
+    <ClCompile Include="..\Classes\ui\base\HNLayer.cpp" />
+    <ClCompile Include="..\Classes\ui\base\HNLayerColor.cpp" />
+    <ClCompile Include="..\Classes\ui\base\HNNode.cpp" />
+    <ClCompile Include="..\Classes\ui\base\HNScene.cpp" />
+    <ClCompile Include="..\Classes\ui\base\HNSprite.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\ClipSprite.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\Effect.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\HNDialogBase.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\HNShake.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\LoadingLayer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\MyProgressTimer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\TextSprite.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\TextureLayer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\UIGoldRain.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\UserHead.cpp" />
+    <ClCompile Include="..\Classes\utils\Tools.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

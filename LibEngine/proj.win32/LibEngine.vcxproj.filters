@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="资源文件">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -79,270 +71,295 @@
     <Filter Include="network\http">
       <UniqueIdentifier>{f9b51638-2909-4cdd-83be-ca9ae0380e76}</UniqueIdentifier>
     </Filter>
+    <Filter Include="tmp">
+      <UniqueIdentifier>{5ede9fe8-510f-46ad-b971-22f5a1c0e25c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\Classes\ui\base\ACheckBox.h">
+      <Filter>ui\base</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\Classes\ui\base\AControlButton.h">
+      <Filter>ui\base</Filter>
     </ClInclude>
-    <ClInclude Include="..\data\xml\XMLParser.h">
-      <Filter>data\xml</Filter>
+    <ClInclude Include="..\Classes\ui\base\ASlider.h">
+      <Filter>ui\base</Filter>
     </ClInclude>
-    <ClInclude Include="..\data\json\JsonParser.h">
-      <Filter>data\json</Filter>
+    <ClInclude Include="..\Classes\ui\base\ATableView.h">
+      <Filter>ui\base</Filter>
     </ClInclude>
-    <ClInclude Include="..\audio\HNAudioEngine.h">
+    <ClInclude Include="..\Classes\ui\base\ATableViewDelegate.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\AUIButton.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\BTableView.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\HNEditBox.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\HNLayer.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\HNLayerColor.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\HNNode.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\HNScene.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\base\HNSprite.h">
+      <Filter>ui\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\ClipSprite.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\Effect.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\HNDialogBase.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\HNShake.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\LoadingLayer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\MyProgressTimer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\TextSprite.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\TextureLayer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\UIGoldRain.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\UserHead.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\audio\HNAudioEngine.h">
       <Filter>audio</Filter>
     </ClInclude>
-    <ClInclude Include="..\test\WireframeOnOff.h">
-      <Filter>test</Filter>
+    <ClInclude Include="..\Classes\data\json\JsonParser.h">
+      <Filter>data\json</Filter>
     </ClInclude>
-    <ClInclude Include="..\render\GraphicsUtils.h">
+    <ClInclude Include="..\Classes\data\xml\XMLParser.h">
+      <Filter>data\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\globel\ApplicationMacro.h">
+      <Filter>globel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\globel\HNCommonMarco.h">
+      <Filter>globel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\FontSize.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\HNBaseCommand.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\HNCommonMarco.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\HNComStruct.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\HNMemoryPool.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\HNPlatformMessage.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\HNRoomMessage.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\tmp\PlatformConfig.h">
+      <Filter>tmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\render\GraphicsUtils.h">
       <Filter>render</Filter>
     </ClInclude>
-    <ClInclude Include="..\ui\base\ACheckBox.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\AControlButton.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\ASlider.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\ATableView.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\ATableViewDelegate.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\AUIButton.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\BTableView.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\HNEditBox.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\HNLayer.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\HNLayerColor.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\HNNode.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\HNScene.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\base\HNSprite.h">
-      <Filter>ui\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\ClipSprite.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\DropdownList.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\Effect.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\HNDialogBase.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\HNShake.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\LoadingLayer.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\TextSprite.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\UIGoldRain.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ui\extensions\UserHead.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\HNUIExport.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\test\HNLog.h">
+    <ClInclude Include="..\Classes\test\HNConverCode.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="..\test\HNConverCode.h">
+    <ClInclude Include="..\Classes\test\HNLog.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="..\test\HNSingleAutoPtr.h">
+    <ClInclude Include="..\Classes\test\HNSingleAutoPtr.h">
       <Filter>test</Filter>
     </ClInclude>
-    <ClInclude Include="..\utils\Tools.h">
+    <ClInclude Include="..\Classes\test\WireframeOnOff.h">
+      <Filter>test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\Tools.h">
       <Filter>utils</Filter>
     </ClInclude>
-    <ClInclude Include="..\ui\extensions\MyProgressTimer.h">
-      <Filter>ui\extensions</Filter>
-    </ClInclude>
-    <ClInclude Include="..\globel\ApplicationMacro.h">
-      <Filter>globel</Filter>
-    </ClInclude>
-    <ClInclude Include="..\HNBaseType.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocket.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketEventDelegate.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketLogic.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketMessage.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketMessageDelegate.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketProtocolData.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketSelector.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\socket\HNSocketThread.h">
-      <Filter>network\socket</Filter>
-    </ClInclude>
-    <ClInclude Include="..\network\http\HNHttp.h">
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\Classes\HNUIExport.h" />
+    <ClInclude Include="..\HNNetworkExport.h" />
+    <ClInclude Include="..\Classes\HNEngineExport.h" />
+    <ClInclude Include="..\Classes\HNBaseType.h" />
+    <ClInclude Include="..\Classes\network\http\HNHttp.h">
       <Filter>network\http</Filter>
     </ClInclude>
-    <ClInclude Include="..\HNNetworkExport.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\Classes\network\socket\HNNetMessageHead.h">
+      <Filter>network\socket</Filter>
     </ClInclude>
-    <ClInclude Include="..\HNEngineExport.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="..\Classes\network\socket\HNSocket.h">
+      <Filter>network\socket</Filter>
     </ClInclude>
-    <ClInclude Include="..\globel\HNCommonMarco.h">
-      <Filter>globel</Filter>
+    <ClInclude Include="..\Classes\network\socket\HNSocketEventDelegate.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\network\socket\HNSocketLogic.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\network\socket\HNSocketMessage.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\network\socket\HNSocketMessageDelegate.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\network\socket\HNSocketProtocolData.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\network\socket\HNSocketSelector.h">
+      <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\network\socket\HNSocketThread.h">
+      <Filter>network\socket</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="..\Classes\ui\base\ACheckBox.cpp">
+      <Filter>ui\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\data\xml\XMLParser.cpp">
-      <Filter>data\xml</Filter>
+    <ClCompile Include="..\Classes\ui\base\AControlButton.cpp">
+      <Filter>ui\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\data\json\JsonParser.cpp">
-      <Filter>data\json</Filter>
+    <ClCompile Include="..\Classes\ui\base\ASlider.cpp">
+      <Filter>ui\base</Filter>
     </ClCompile>
-    <ClCompile Include="..\audio\HNAudioEngine.cpp">
+    <ClCompile Include="..\Classes\ui\base\ATableView.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\ATableViewDelegate.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\AUIButton.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\BTableView.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\HNEditBox.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\HNLayer.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\HNLayerColor.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\HNNode.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\HNScene.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\base\HNSprite.cpp">
+      <Filter>ui\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\ClipSprite.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\Effect.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\HNDialogBase.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\HNShake.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\LoadingLayer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\MyProgressTimer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\TextSprite.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\TextureLayer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\UIGoldRain.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\UserHead.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\audio\HNAudioEngine.cpp">
       <Filter>audio</Filter>
     </ClCompile>
-    <ClCompile Include="..\test\WireframeOnOff.cpp">
-      <Filter>test</Filter>
+    <ClCompile Include="..\Classes\data\json\JsonParser.cpp">
+      <Filter>data\json</Filter>
     </ClCompile>
-    <ClCompile Include="..\render\GraphicsUtils.cpp">
+    <ClCompile Include="..\Classes\data\xml\XMLParser.cpp">
+      <Filter>data\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tmp\HNBaseCommand.cpp">
+      <Filter>tmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tmp\HNMemoryPool.cpp">
+      <Filter>tmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\tmp\PlatformConfig.cpp">
+      <Filter>tmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\render\GraphicsUtils.cpp">
       <Filter>render</Filter>
     </ClCompile>
-    <ClCompile Include="..\ui\base\ACheckBox.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\AControlButton.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\ASlider.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\ATableView.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\ATableViewDelegate.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\AUIButton.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\BTableView.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\HNEditBox.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\HNLayer.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\HNLayerColor.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\HNNode.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\HNScene.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\base\HNSprite.cpp">
-      <Filter>ui\base</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\ClipSprite.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\DropdownList.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\Effect.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\HNDialogBase.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\HNShake.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\LoadingLayer.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\TextSprite.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\UIGoldRain.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\ui\extensions\UserHead.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\test\HNLog.cpp">
+    <ClCompile Include="..\Classes\test\HNConverCode.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="..\test\HNConverCode.cpp">
+    <ClCompile Include="..\Classes\test\HNLog.cpp">
       <Filter>test</Filter>
     </ClCompile>
-    <ClCompile Include="..\utils\Tools.cpp">
+    <ClCompile Include="..\Classes\test\WireframeOnOff.cpp">
+      <Filter>test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\Tools.cpp">
       <Filter>utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\ui\extensions\MyProgressTimer.cpp">
-      <Filter>ui\extensions</Filter>
-    </ClCompile>
-    <ClCompile Include="..\network\socket\HNSocket.cpp">
-      <Filter>network\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="..\network\socket\HNSocketLogic.cpp">
-      <Filter>network\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="..\network\socket\HNSocketMessage.cpp">
-      <Filter>network\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="..\network\socket\HNSocketProtocolData.cpp">
-      <Filter>network\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="..\network\socket\HNSocketThread.cpp">
-      <Filter>network\socket</Filter>
-    </ClCompile>
-    <ClCompile Include="..\network\http\HNHttp.cpp">
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="..\Classes\network\http\HNHttp.cpp">
       <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\network\socket\HNSocket.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\network\socket\HNSocketLogic.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\network\socket\HNSocketMessage.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\network\socket\HNSocketProtocolData.cpp">
+      <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\network\socket\HNSocketThread.cpp">
+      <Filter>network\socket</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

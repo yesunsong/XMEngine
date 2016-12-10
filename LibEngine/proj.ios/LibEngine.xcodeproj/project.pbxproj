@@ -1,0 +1,1397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		123DEE581DFA6CA40033B2A1 /* FontSize.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906001DF8FF9B002AAC7C /* FontSize.h */; };
+		123DEE591DFA6CA40033B2A1 /* HNBaseCommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E906011DF8FF9B002AAC7C /* HNBaseCommand.cpp */; };
+		123DEE5A1DFA6CA40033B2A1 /* HNBaseCommand.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906021DF8FF9B002AAC7C /* HNBaseCommand.h */; };
+		123DEE5B1DFA6CA40033B2A1 /* HNCommonMarco.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906091DF9009A002AAC7C /* HNCommonMarco.h */; };
+		123DEE5C1DFA6CA40033B2A1 /* HNComStruct.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906081DF8FFE5002AAC7C /* HNComStruct.h */; };
+		123DEE5D1DFA6CA40033B2A1 /* HNMemoryPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E906031DF8FF9B002AAC7C /* HNMemoryPool.cpp */; };
+		123DEE5E1DFA6CA40033B2A1 /* HNMemoryPool.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906041DF8FF9B002AAC7C /* HNMemoryPool.h */; };
+		123DEE5F1DFA6CA40033B2A1 /* HNPlatformMessage.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906051DF8FF9B002AAC7C /* HNPlatformMessage.h */; };
+		123DEE601DFA6CA40033B2A1 /* HNRoomMessage.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E9060A1DF900F3002AAC7C /* HNRoomMessage.h */; };
+		123DEE611DFA6CA40033B2A1 /* PlatformConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12E906061DF8FF9B002AAC7C /* PlatformConfig.cpp */; };
+		123DEE621DFA6CA40033B2A1 /* PlatformConfig.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E906071DF8FF9B002AAC7C /* PlatformConfig.h */; };
+		123DEE631DFA6CA40033B2A1 /* HNAudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E091DEBBECA0050568A /* HNAudioEngine.cpp */; };
+		123DEE641DFA6CA40033B2A1 /* HNAudioEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E0A1DEBBECA0050568A /* HNAudioEngine.h */; };
+		123DEE651DFA6CA40033B2A1 /* JsonParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E0D1DEBBECA0050568A /* JsonParser.cpp */; };
+		123DEE661DFA6CA40033B2A1 /* JsonParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E0E1DEBBECA0050568A /* JsonParser.h */; };
+		123DEE671DFA6CA40033B2A1 /* XMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E101DEBBECA0050568A /* XMLParser.cpp */; };
+		123DEE681DFA6CA40033B2A1 /* XMLParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E111DEBBECA0050568A /* XMLParser.h */; };
+		123DEE691DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E131DEBBECA0050568A /* tmp.txt */; };
+		123DEE6A1DFA6CA40033B2A1 /* ApplicationMacro.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E151DEBBECA0050568A /* ApplicationMacro.h */; };
+		123DEE6B1DFA6CA40033B2A1 /* HNCommonMarco.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E161DEBBECA0050568A /* HNCommonMarco.h */; };
+		123DEE6C1DFA6CA40033B2A1 /* HNBaseType.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E171DEBBECA0050568A /* HNBaseType.h */; };
+		123DEE6D1DFA6CA40033B2A1 /* HNEngineExport.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E181DEBBECA0050568A /* HNEngineExport.h */; };
+		123DEE6E1DFA6CA40033B2A1 /* HNNetworkExport.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E191DEBBECA0050568A /* HNNetworkExport.h */; };
+		123DEE6F1DFA6CA40033B2A1 /* HNUIExport.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E1A1DEBBECA0050568A /* HNUIExport.h */; };
+		123DEE701DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E1C1DEBBECA0050568A /* tmp.txt */; };
+		123DEE711DFA6CA40033B2A1 /* HNHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E1F1DEBBECA0050568A /* HNHttp.cpp */; };
+		123DEE721DFA6CA40033B2A1 /* HNHttp.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E201DEBBECA0050568A /* HNHttp.h */; };
+		123DEE731DFA6CA40033B2A1 /* HNNetMessageHead.h in Sources */ = {isa = PBXBuildFile; fileRef = 12E905E61DF8F616002AAC7C /* HNNetMessageHead.h */; };
+		123DEE741DFA6CA40033B2A1 /* HNSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E221DEBBECA0050568A /* HNSocket.cpp */; };
+		123DEE751DFA6CA40033B2A1 /* HNSocket.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E231DEBBECA0050568A /* HNSocket.h */; };
+		123DEE761DFA6CA40033B2A1 /* HNSocketEventDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E241DEBBECA0050568A /* HNSocketEventDelegate.h */; };
+		123DEE771DFA6CA40033B2A1 /* HNSocketLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E251DEBBECA0050568A /* HNSocketLogic.cpp */; };
+		123DEE781DFA6CA40033B2A1 /* HNSocketLogic.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E261DEBBECA0050568A /* HNSocketLogic.h */; };
+		123DEE791DFA6CA40033B2A1 /* HNSocketMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E271DEBBECA0050568A /* HNSocketMessage.cpp */; };
+		123DEE7A1DFA6CA40033B2A1 /* HNSocketMessage.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E281DEBBECA0050568A /* HNSocketMessage.h */; };
+		123DEE7B1DFA6CA40033B2A1 /* HNSocketMessageDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E291DEBBECA0050568A /* HNSocketMessageDelegate.h */; };
+		123DEE7C1DFA6CA40033B2A1 /* HNSocketProtocolData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2A1DEBBECA0050568A /* HNSocketProtocolData.cpp */; };
+		123DEE7D1DFA6CA40033B2A1 /* HNSocketProtocolData.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2B1DEBBECA0050568A /* HNSocketProtocolData.h */; };
+		123DEE7E1DFA6CA40033B2A1 /* HNSocketSelector.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2C1DEBBECA0050568A /* HNSocketSelector.h */; };
+		123DEE7F1DFA6CA40033B2A1 /* HNSocketThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2D1DEBBECA0050568A /* HNSocketThread.cpp */; };
+		123DEE801DFA6CA40033B2A1 /* HNSocketThread.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2E1DEBBECA0050568A /* HNSocketThread.h */; };
+		123DEE811DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E311DEBBECA0050568A /* tmp.txt */; };
+		123DEE821DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E331DEBBECA0050568A /* tmp.txt */; };
+		123DEE831DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E351DEBBECA0050568A /* tmp.txt */; };
+		123DEE841DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E371DEBBECA0050568A /* tmp.txt */; };
+		123DEE851DFA6CA40033B2A1 /* tmp.txt in Sources */ = {isa = PBXBuildFile; fileRef = 12498E391DEBBECA0050568A /* tmp.txt */; };
+		123DEE861DFA6CA40033B2A1 /* GraphicsUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3B1DEBBECA0050568A /* GraphicsUtils.cpp */; };
+		123DEE871DFA6CA40033B2A1 /* GraphicsUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3C1DEBBECA0050568A /* GraphicsUtils.h */; };
+		123DEE881DFA6CA40033B2A1 /* HNConverCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3E1DEBBECA0050568A /* HNConverCode.cpp */; };
+		123DEE891DFA6CA40033B2A1 /* HNConverCode.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3F1DEBBECA0050568A /* HNConverCode.h */; };
+		123DEE8A1DFA6CA40033B2A1 /* HNLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E401DEBBECA0050568A /* HNLog.cpp */; };
+		123DEE8B1DFA6CA40033B2A1 /* HNLog.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E411DEBBECA0050568A /* HNLog.h */; };
+		123DEE8C1DFA6CA40033B2A1 /* HNSingleAutoPtr.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E421DEBBECA0050568A /* HNSingleAutoPtr.h */; };
+		123DEE8D1DFA6CA40033B2A1 /* WireframeOnOff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E431DEBBECA0050568A /* WireframeOnOff.cpp */; };
+		123DEE8E1DFA6CA40033B2A1 /* WireframeOnOff.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E441DEBBECA0050568A /* WireframeOnOff.h */; };
+		123DEE8F1DFA6CA40033B2A1 /* ACheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E471DEBBECA0050568A /* ACheckBox.cpp */; };
+		123DEE901DFA6CA40033B2A1 /* ACheckBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E481DEBBECA0050568A /* ACheckBox.h */; };
+		123DEE911DFA6CA40033B2A1 /* AControlButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E491DEBBECA0050568A /* AControlButton.cpp */; };
+		123DEE921DFA6CA40033B2A1 /* AControlButton.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4A1DEBBECA0050568A /* AControlButton.h */; };
+		123DEE931DFA6CA40033B2A1 /* ASlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4B1DEBBECA0050568A /* ASlider.cpp */; };
+		123DEE941DFA6CA40033B2A1 /* ASlider.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4C1DEBBECA0050568A /* ASlider.h */; };
+		123DEE951DFA6CA40033B2A1 /* ATableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4D1DEBBECA0050568A /* ATableView.cpp */; };
+		123DEE961DFA6CA40033B2A1 /* ATableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4E1DEBBECA0050568A /* ATableView.h */; };
+		123DEE971DFA6CA40033B2A1 /* ATableViewDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4F1DEBBECA0050568A /* ATableViewDelegate.cpp */; };
+		123DEE981DFA6CA40033B2A1 /* ATableViewDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E501DEBBECA0050568A /* ATableViewDelegate.h */; };
+		123DEE991DFA6CA40033B2A1 /* AUIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E511DEBBECA0050568A /* AUIButton.cpp */; };
+		123DEE9A1DFA6CA40033B2A1 /* AUIButton.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E521DEBBECA0050568A /* AUIButton.h */; };
+		123DEE9B1DFA6CA40033B2A1 /* BTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E531DEBBECA0050568A /* BTableView.cpp */; };
+		123DEE9C1DFA6CA40033B2A1 /* BTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E541DEBBECA0050568A /* BTableView.h */; };
+		123DEE9D1DFA6CA40033B2A1 /* HNEditBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E551DEBBECA0050568A /* HNEditBox.cpp */; };
+		123DEE9E1DFA6CA40033B2A1 /* HNEditBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E561DEBBECA0050568A /* HNEditBox.h */; };
+		123DEE9F1DFA6CA40033B2A1 /* HNLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E571DEBBECA0050568A /* HNLayer.cpp */; };
+		123DEEA01DFA6CA40033B2A1 /* HNLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E581DEBBECA0050568A /* HNLayer.h */; };
+		123DEEA11DFA6CA40033B2A1 /* HNLayerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E591DEBBECA0050568A /* HNLayerColor.cpp */; };
+		123DEEA21DFA6CA40033B2A1 /* HNLayerColor.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5A1DEBBECA0050568A /* HNLayerColor.h */; };
+		123DEEA31DFA6CA40033B2A1 /* HNNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5B1DEBBECA0050568A /* HNNode.cpp */; };
+		123DEEA41DFA6CA40033B2A1 /* HNNode.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5C1DEBBECA0050568A /* HNNode.h */; };
+		123DEEA51DFA6CA40033B2A1 /* HNScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5D1DEBBECA0050568A /* HNScene.cpp */; };
+		123DEEA61DFA6CA40033B2A1 /* HNScene.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5E1DEBBECA0050568A /* HNScene.h */; };
+		123DEEA71DFA6CA40033B2A1 /* HNSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5F1DEBBECA0050568A /* HNSprite.cpp */; };
+		123DEEA81DFA6CA40033B2A1 /* HNSprite.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E601DEBBECA0050568A /* HNSprite.h */; };
+		123DEEA91DFA6CA40033B2A1 /* ClipSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E621DEBBECA0050568A /* ClipSprite.cpp */; };
+		123DEEAA1DFA6CA40033B2A1 /* ClipSprite.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E631DEBBECA0050568A /* ClipSprite.h */; };
+		123DEEAB1DFA6CA40033B2A1 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E661DEBBECA0050568A /* Effect.cpp */; };
+		123DEEAC1DFA6CA40033B2A1 /* Effect.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E671DEBBECA0050568A /* Effect.h */; };
+		123DEEAD1DFA6CA40033B2A1 /* HNDialogBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E681DEBBECA0050568A /* HNDialogBase.cpp */; };
+		123DEEAE1DFA6CA40033B2A1 /* HNDialogBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E691DEBBECA0050568A /* HNDialogBase.h */; };
+		123DEEAF1DFA6CA40033B2A1 /* HNShake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6A1DEBBECA0050568A /* HNShake.cpp */; };
+		123DEEB01DFA6CA40033B2A1 /* HNShake.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6B1DEBBECA0050568A /* HNShake.h */; };
+		123DEEB11DFA6CA40033B2A1 /* LoadingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6C1DEBBECA0050568A /* LoadingLayer.cpp */; };
+		123DEEB21DFA6CA40033B2A1 /* LoadingLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6D1DEBBECA0050568A /* LoadingLayer.h */; };
+		123DEEB31DFA6CA40033B2A1 /* MyProgressTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6E1DEBBECA0050568A /* MyProgressTimer.cpp */; };
+		123DEEB41DFA6CA40033B2A1 /* MyProgressTimer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6F1DEBBECA0050568A /* MyProgressTimer.h */; };
+		123DEEB51DFA6CA40033B2A1 /* TextSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E721DEBBECA0050568A /* TextSprite.cpp */; };
+		123DEEB61DFA6CA40033B2A1 /* TextSprite.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E731DEBBECA0050568A /* TextSprite.h */; };
+		123DEEB71DFA6CA40033B2A1 /* TextureLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E741DEBBECA0050568A /* TextureLayer.cpp */; };
+		123DEEB81DFA6CA40033B2A1 /* TextureLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E751DEBBECA0050568A /* TextureLayer.h */; };
+		123DEEB91DFA6CA40033B2A1 /* UIGoldRain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E761DEBBECA0050568A /* UIGoldRain.cpp */; };
+		123DEEBA1DFA6CA40033B2A1 /* UIGoldRain.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E771DEBBECA0050568A /* UIGoldRain.h */; };
+		123DEEBB1DFA6CA40033B2A1 /* UserHead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E781DEBBECA0050568A /* UserHead.cpp */; };
+		123DEEBC1DFA6CA40033B2A1 /* UserHead.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E791DEBBECA0050568A /* UserHead.h */; };
+		123DEEBD1DFA6CA40033B2A1 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E7B1DEBBECA0050568A /* Tools.cpp */; };
+		123DEEBE1DFA6CA40033B2A1 /* Tools.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E7C1DEBBECA0050568A /* Tools.h */; };
+		123DEEBF1DFA6CB40033B2A1 /* FontSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906001DF8FF9B002AAC7C /* FontSize.h */; };
+		123DEEC01DFA6CB40033B2A1 /* HNBaseCommand.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12E906011DF8FF9B002AAC7C /* HNBaseCommand.cpp */; };
+		123DEEC11DFA6CB40033B2A1 /* HNBaseCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906021DF8FF9B002AAC7C /* HNBaseCommand.h */; };
+		123DEEC21DFA6CB40033B2A1 /* HNCommonMarco.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906091DF9009A002AAC7C /* HNCommonMarco.h */; };
+		123DEEC31DFA6CB40033B2A1 /* HNComStruct.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906081DF8FFE5002AAC7C /* HNComStruct.h */; };
+		123DEEC41DFA6CB40033B2A1 /* HNMemoryPool.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12E906031DF8FF9B002AAC7C /* HNMemoryPool.cpp */; };
+		123DEEC51DFA6CB40033B2A1 /* HNMemoryPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906041DF8FF9B002AAC7C /* HNMemoryPool.h */; };
+		123DEEC61DFA6CB40033B2A1 /* HNPlatformMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906051DF8FF9B002AAC7C /* HNPlatformMessage.h */; };
+		123DEEC71DFA6CB40033B2A1 /* HNRoomMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E9060A1DF900F3002AAC7C /* HNRoomMessage.h */; };
+		123DEEC81DFA6CB40033B2A1 /* PlatformConfig.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12E906061DF8FF9B002AAC7C /* PlatformConfig.cpp */; };
+		123DEEC91DFA6CB40033B2A1 /* PlatformConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E906071DF8FF9B002AAC7C /* PlatformConfig.h */; };
+		123DEECA1DFA6CB40033B2A1 /* HNAudioEngine.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E091DEBBECA0050568A /* HNAudioEngine.cpp */; };
+		123DEECB1DFA6CB40033B2A1 /* HNAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E0A1DEBBECA0050568A /* HNAudioEngine.h */; };
+		123DEECC1DFA6CB40033B2A1 /* JsonParser.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E0D1DEBBECA0050568A /* JsonParser.cpp */; };
+		123DEECD1DFA6CB40033B2A1 /* JsonParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E0E1DEBBECA0050568A /* JsonParser.h */; };
+		123DEECE1DFA6CB40033B2A1 /* XMLParser.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E101DEBBECA0050568A /* XMLParser.cpp */; };
+		123DEECF1DFA6CB40033B2A1 /* XMLParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E111DEBBECA0050568A /* XMLParser.h */; };
+		123DEED01DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E131DEBBECA0050568A /* tmp.txt */; };
+		123DEED11DFA6CB40033B2A1 /* ApplicationMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E151DEBBECA0050568A /* ApplicationMacro.h */; };
+		123DEED21DFA6CB40033B2A1 /* HNCommonMarco.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E161DEBBECA0050568A /* HNCommonMarco.h */; };
+		123DEED31DFA6CB40033B2A1 /* HNBaseType.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E171DEBBECA0050568A /* HNBaseType.h */; };
+		123DEED41DFA6CB40033B2A1 /* HNEngineExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E181DEBBECA0050568A /* HNEngineExport.h */; };
+		123DEED51DFA6CB40033B2A1 /* HNNetworkExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E191DEBBECA0050568A /* HNNetworkExport.h */; };
+		123DEED61DFA6CB40033B2A1 /* HNUIExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E1A1DEBBECA0050568A /* HNUIExport.h */; };
+		123DEED71DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E1C1DEBBECA0050568A /* tmp.txt */; };
+		123DEED81DFA6CB40033B2A1 /* HNHttp.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E1F1DEBBECA0050568A /* HNHttp.cpp */; };
+		123DEED91DFA6CB40033B2A1 /* HNHttp.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E201DEBBECA0050568A /* HNHttp.h */; };
+		123DEEDA1DFA6CB40033B2A1 /* HNNetMessageHead.h in Headers */ = {isa = PBXBuildFile; fileRef = 12E905E61DF8F616002AAC7C /* HNNetMessageHead.h */; };
+		123DEEDB1DFA6CB40033B2A1 /* HNSocket.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E221DEBBECA0050568A /* HNSocket.cpp */; };
+		123DEEDC1DFA6CB40033B2A1 /* HNSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E231DEBBECA0050568A /* HNSocket.h */; };
+		123DEEDD1DFA6CB40033B2A1 /* HNSocketEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E241DEBBECA0050568A /* HNSocketEventDelegate.h */; };
+		123DEEDE1DFA6CB40033B2A1 /* HNSocketLogic.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E251DEBBECA0050568A /* HNSocketLogic.cpp */; };
+		123DEEDF1DFA6CB40033B2A1 /* HNSocketLogic.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E261DEBBECA0050568A /* HNSocketLogic.h */; };
+		123DEEE01DFA6CB40033B2A1 /* HNSocketMessage.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E271DEBBECA0050568A /* HNSocketMessage.cpp */; };
+		123DEEE11DFA6CB40033B2A1 /* HNSocketMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E281DEBBECA0050568A /* HNSocketMessage.h */; };
+		123DEEE21DFA6CB40033B2A1 /* HNSocketMessageDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E291DEBBECA0050568A /* HNSocketMessageDelegate.h */; };
+		123DEEE31DFA6CB40033B2A1 /* HNSocketProtocolData.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E2A1DEBBECA0050568A /* HNSocketProtocolData.cpp */; };
+		123DEEE41DFA6CB40033B2A1 /* HNSocketProtocolData.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E2B1DEBBECA0050568A /* HNSocketProtocolData.h */; };
+		123DEEE51DFA6CB40033B2A1 /* HNSocketSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E2C1DEBBECA0050568A /* HNSocketSelector.h */; };
+		123DEEE61DFA6CB40033B2A1 /* HNSocketThread.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E2D1DEBBECA0050568A /* HNSocketThread.cpp */; };
+		123DEEE71DFA6CB40033B2A1 /* HNSocketThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E2E1DEBBECA0050568A /* HNSocketThread.h */; };
+		123DEEE81DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E311DEBBECA0050568A /* tmp.txt */; };
+		123DEEE91DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E331DEBBECA0050568A /* tmp.txt */; };
+		123DEEEA1DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E351DEBBECA0050568A /* tmp.txt */; };
+		123DEEEB1DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E371DEBBECA0050568A /* tmp.txt */; };
+		123DEEEC1DFA6CB40033B2A1 /* tmp.txt in Headers */ = {isa = PBXBuildFile; fileRef = 12498E391DEBBECA0050568A /* tmp.txt */; };
+		123DEEED1DFA6CB40033B2A1 /* GraphicsUtils.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E3B1DEBBECA0050568A /* GraphicsUtils.cpp */; };
+		123DEEEE1DFA6CB40033B2A1 /* GraphicsUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E3C1DEBBECA0050568A /* GraphicsUtils.h */; };
+		123DEEEF1DFA6CB40033B2A1 /* HNConverCode.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E3E1DEBBECA0050568A /* HNConverCode.cpp */; };
+		123DEEF01DFA6CB40033B2A1 /* HNConverCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E3F1DEBBECA0050568A /* HNConverCode.h */; };
+		123DEEF11DFA6CB40033B2A1 /* HNLog.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E401DEBBECA0050568A /* HNLog.cpp */; };
+		123DEEF21DFA6CB40033B2A1 /* HNLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E411DEBBECA0050568A /* HNLog.h */; };
+		123DEEF31DFA6CB40033B2A1 /* HNSingleAutoPtr.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E421DEBBECA0050568A /* HNSingleAutoPtr.h */; };
+		123DEEF41DFA6CB40033B2A1 /* WireframeOnOff.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E431DEBBECA0050568A /* WireframeOnOff.cpp */; };
+		123DEEF51DFA6CB40033B2A1 /* WireframeOnOff.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E441DEBBECA0050568A /* WireframeOnOff.h */; };
+		123DEEF61DFA6CB40033B2A1 /* ACheckBox.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E471DEBBECA0050568A /* ACheckBox.cpp */; };
+		123DEEF71DFA6CB40033B2A1 /* ACheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E481DEBBECA0050568A /* ACheckBox.h */; };
+		123DEEF81DFA6CB40033B2A1 /* AControlButton.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E491DEBBECA0050568A /* AControlButton.cpp */; };
+		123DEEF91DFA6CB40033B2A1 /* AControlButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E4A1DEBBECA0050568A /* AControlButton.h */; };
+		123DEEFA1DFA6CB40033B2A1 /* ASlider.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E4B1DEBBECA0050568A /* ASlider.cpp */; };
+		123DEEFB1DFA6CB40033B2A1 /* ASlider.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E4C1DEBBECA0050568A /* ASlider.h */; };
+		123DEEFC1DFA6CB40033B2A1 /* ATableView.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E4D1DEBBECA0050568A /* ATableView.cpp */; };
+		123DEEFD1DFA6CB40033B2A1 /* ATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E4E1DEBBECA0050568A /* ATableView.h */; };
+		123DEEFE1DFA6CB40033B2A1 /* ATableViewDelegate.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E4F1DEBBECA0050568A /* ATableViewDelegate.cpp */; };
+		123DEEFF1DFA6CB40033B2A1 /* ATableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E501DEBBECA0050568A /* ATableViewDelegate.h */; };
+		123DEF001DFA6CB40033B2A1 /* AUIButton.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E511DEBBECA0050568A /* AUIButton.cpp */; };
+		123DEF011DFA6CB40033B2A1 /* AUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E521DEBBECA0050568A /* AUIButton.h */; };
+		123DEF021DFA6CB40033B2A1 /* BTableView.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E531DEBBECA0050568A /* BTableView.cpp */; };
+		123DEF031DFA6CB40033B2A1 /* BTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E541DEBBECA0050568A /* BTableView.h */; };
+		123DEF041DFA6CB40033B2A1 /* HNEditBox.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E551DEBBECA0050568A /* HNEditBox.cpp */; };
+		123DEF051DFA6CB40033B2A1 /* HNEditBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E561DEBBECA0050568A /* HNEditBox.h */; };
+		123DEF061DFA6CB40033B2A1 /* HNLayer.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E571DEBBECA0050568A /* HNLayer.cpp */; };
+		123DEF071DFA6CB40033B2A1 /* HNLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E581DEBBECA0050568A /* HNLayer.h */; };
+		123DEF081DFA6CB40033B2A1 /* HNLayerColor.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E591DEBBECA0050568A /* HNLayerColor.cpp */; };
+		123DEF091DFA6CB40033B2A1 /* HNLayerColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E5A1DEBBECA0050568A /* HNLayerColor.h */; };
+		123DEF0A1DFA6CB40033B2A1 /* HNNode.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E5B1DEBBECA0050568A /* HNNode.cpp */; };
+		123DEF0B1DFA6CB40033B2A1 /* HNNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E5C1DEBBECA0050568A /* HNNode.h */; };
+		123DEF0C1DFA6CB40033B2A1 /* HNScene.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E5D1DEBBECA0050568A /* HNScene.cpp */; };
+		123DEF0D1DFA6CB40033B2A1 /* HNScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E5E1DEBBECA0050568A /* HNScene.h */; };
+		123DEF0E1DFA6CB40033B2A1 /* HNSprite.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E5F1DEBBECA0050568A /* HNSprite.cpp */; };
+		123DEF0F1DFA6CB40033B2A1 /* HNSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E601DEBBECA0050568A /* HNSprite.h */; };
+		123DEF101DFA6CB40033B2A1 /* ClipSprite.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E621DEBBECA0050568A /* ClipSprite.cpp */; };
+		123DEF111DFA6CB40033B2A1 /* ClipSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E631DEBBECA0050568A /* ClipSprite.h */; };
+		123DEF121DFA6CB40033B2A1 /* Effect.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E661DEBBECA0050568A /* Effect.cpp */; };
+		123DEF131DFA6CB40033B2A1 /* Effect.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E671DEBBECA0050568A /* Effect.h */; };
+		123DEF141DFA6CB40033B2A1 /* HNDialogBase.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E681DEBBECA0050568A /* HNDialogBase.cpp */; };
+		123DEF151DFA6CB40033B2A1 /* HNDialogBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E691DEBBECA0050568A /* HNDialogBase.h */; };
+		123DEF161DFA6CB40033B2A1 /* HNShake.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E6A1DEBBECA0050568A /* HNShake.cpp */; };
+		123DEF171DFA6CB40033B2A1 /* HNShake.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E6B1DEBBECA0050568A /* HNShake.h */; };
+		123DEF181DFA6CB40033B2A1 /* LoadingLayer.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E6C1DEBBECA0050568A /* LoadingLayer.cpp */; };
+		123DEF191DFA6CB40033B2A1 /* LoadingLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E6D1DEBBECA0050568A /* LoadingLayer.h */; };
+		123DEF1A1DFA6CB40033B2A1 /* MyProgressTimer.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E6E1DEBBECA0050568A /* MyProgressTimer.cpp */; };
+		123DEF1B1DFA6CB40033B2A1 /* MyProgressTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E6F1DEBBECA0050568A /* MyProgressTimer.h */; };
+		123DEF1C1DFA6CB40033B2A1 /* TextSprite.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E721DEBBECA0050568A /* TextSprite.cpp */; };
+		123DEF1D1DFA6CB40033B2A1 /* TextSprite.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E731DEBBECA0050568A /* TextSprite.h */; };
+		123DEF1E1DFA6CB40033B2A1 /* TextureLayer.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E741DEBBECA0050568A /* TextureLayer.cpp */; };
+		123DEF1F1DFA6CB40033B2A1 /* TextureLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E751DEBBECA0050568A /* TextureLayer.h */; };
+		123DEF201DFA6CB40033B2A1 /* UIGoldRain.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E761DEBBECA0050568A /* UIGoldRain.cpp */; };
+		123DEF211DFA6CB40033B2A1 /* UIGoldRain.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E771DEBBECA0050568A /* UIGoldRain.h */; };
+		123DEF221DFA6CB40033B2A1 /* UserHead.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E781DEBBECA0050568A /* UserHead.cpp */; };
+		123DEF231DFA6CB40033B2A1 /* UserHead.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E791DEBBECA0050568A /* UserHead.h */; };
+		123DEF241DFA6CB40033B2A1 /* Tools.cpp in Headers */ = {isa = PBXBuildFile; fileRef = 12498E7B1DEBBECA0050568A /* Tools.cpp */; };
+		123DEF251DFA6CB40033B2A1 /* Tools.h in Headers */ = {isa = PBXBuildFile; fileRef = 12498E7C1DEBBECA0050568A /* Tools.h */; };
+		12498E7D1DEBBF370050568A /* HNAudioEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E091DEBBECA0050568A /* HNAudioEngine.cpp */; };
+		12498E7E1DEBBF370050568A /* HNAudioEngine.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E0A1DEBBECA0050568A /* HNAudioEngine.h */; };
+		12498E7F1DEBBF370050568A /* JsonParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E0D1DEBBECA0050568A /* JsonParser.cpp */; };
+		12498E801DEBBF370050568A /* JsonParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E0E1DEBBECA0050568A /* JsonParser.h */; };
+		12498E811DEBBF370050568A /* XMLParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E101DEBBECA0050568A /* XMLParser.cpp */; };
+		12498E821DEBBF370050568A /* XMLParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E111DEBBECA0050568A /* XMLParser.h */; };
+		12498E831DEBBF370050568A /* ApplicationMacro.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E151DEBBECA0050568A /* ApplicationMacro.h */; };
+		12498E841DEBBF460050568A /* HNCommonMarco.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E161DEBBECA0050568A /* HNCommonMarco.h */; };
+		12498E851DEBBF460050568A /* HNBaseType.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E171DEBBECA0050568A /* HNBaseType.h */; };
+		12498E861DEBBF460050568A /* HNEngineExport.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E181DEBBECA0050568A /* HNEngineExport.h */; };
+		12498E871DEBBF460050568A /* HNNetworkExport.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E191DEBBECA0050568A /* HNNetworkExport.h */; };
+		12498E881DEBBF460050568A /* HNUIExport.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E1A1DEBBECA0050568A /* HNUIExport.h */; };
+		12498E891DEBBF460050568A /* HNHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E1F1DEBBECA0050568A /* HNHttp.cpp */; };
+		12498E8A1DEBBF460050568A /* HNHttp.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E201DEBBECA0050568A /* HNHttp.h */; };
+		12498E8B1DEBBF460050568A /* HNSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E221DEBBECA0050568A /* HNSocket.cpp */; };
+		12498E8C1DEBBF460050568A /* HNSocket.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E231DEBBECA0050568A /* HNSocket.h */; };
+		12498E8D1DEBBF460050568A /* HNSocketEventDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E241DEBBECA0050568A /* HNSocketEventDelegate.h */; };
+		12498E8E1DEBBF460050568A /* HNSocketLogic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E251DEBBECA0050568A /* HNSocketLogic.cpp */; };
+		12498E8F1DEBBF460050568A /* HNSocketLogic.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E261DEBBECA0050568A /* HNSocketLogic.h */; };
+		12498E901DEBBF460050568A /* HNSocketMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E271DEBBECA0050568A /* HNSocketMessage.cpp */; };
+		12498E911DEBBF460050568A /* HNSocketMessage.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E281DEBBECA0050568A /* HNSocketMessage.h */; };
+		12498E921DEBBF460050568A /* HNSocketMessageDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E291DEBBECA0050568A /* HNSocketMessageDelegate.h */; };
+		12498E931DEBBF460050568A /* HNSocketProtocolData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2A1DEBBECA0050568A /* HNSocketProtocolData.cpp */; };
+		12498E941DEBBF460050568A /* HNSocketProtocolData.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2B1DEBBECA0050568A /* HNSocketProtocolData.h */; };
+		12498E951DEBBF460050568A /* HNSocketSelector.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2C1DEBBECA0050568A /* HNSocketSelector.h */; };
+		12498E961DEBBF460050568A /* HNSocketThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2D1DEBBECA0050568A /* HNSocketThread.cpp */; };
+		12498E971DEBBF460050568A /* HNSocketThread.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E2E1DEBBECA0050568A /* HNSocketThread.h */; };
+		12498E981DEBBF5F0050568A /* GraphicsUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3B1DEBBECA0050568A /* GraphicsUtils.cpp */; };
+		12498E991DEBBF5F0050568A /* GraphicsUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3C1DEBBECA0050568A /* GraphicsUtils.h */; };
+		12498E9A1DEBBF5F0050568A /* HNConverCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3E1DEBBECA0050568A /* HNConverCode.cpp */; };
+		12498E9B1DEBBF5F0050568A /* HNConverCode.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E3F1DEBBECA0050568A /* HNConverCode.h */; };
+		12498E9C1DEBBF5F0050568A /* HNLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E401DEBBECA0050568A /* HNLog.cpp */; };
+		12498E9D1DEBBF5F0050568A /* HNLog.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E411DEBBECA0050568A /* HNLog.h */; };
+		12498E9E1DEBBF5F0050568A /* HNSingleAutoPtr.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E421DEBBECA0050568A /* HNSingleAutoPtr.h */; };
+		12498E9F1DEBBF5F0050568A /* WireframeOnOff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E431DEBBECA0050568A /* WireframeOnOff.cpp */; };
+		12498EA01DEBBF5F0050568A /* WireframeOnOff.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E441DEBBECA0050568A /* WireframeOnOff.h */; };
+		12498EA11DEBBF5F0050568A /* ACheckBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E471DEBBECA0050568A /* ACheckBox.cpp */; };
+		12498EA21DEBBF5F0050568A /* ACheckBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E481DEBBECA0050568A /* ACheckBox.h */; };
+		12498EA31DEBBF5F0050568A /* AControlButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E491DEBBECA0050568A /* AControlButton.cpp */; };
+		12498EA41DEBBF5F0050568A /* AControlButton.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4A1DEBBECA0050568A /* AControlButton.h */; };
+		12498EA51DEBBF5F0050568A /* ASlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4B1DEBBECA0050568A /* ASlider.cpp */; };
+		12498EA61DEBBF5F0050568A /* ASlider.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4C1DEBBECA0050568A /* ASlider.h */; };
+		12498EA71DEBBF5F0050568A /* ATableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4D1DEBBECA0050568A /* ATableView.cpp */; };
+		12498EA81DEBBF5F0050568A /* ATableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4E1DEBBECA0050568A /* ATableView.h */; };
+		12498EA91DEBBF5F0050568A /* ATableViewDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E4F1DEBBECA0050568A /* ATableViewDelegate.cpp */; };
+		12498EAA1DEBBF5F0050568A /* ATableViewDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E501DEBBECA0050568A /* ATableViewDelegate.h */; };
+		12498EAB1DEBBF5F0050568A /* AUIButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E511DEBBECA0050568A /* AUIButton.cpp */; };
+		12498EAC1DEBBF5F0050568A /* AUIButton.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E521DEBBECA0050568A /* AUIButton.h */; };
+		12498EAD1DEBBF5F0050568A /* BTableView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E531DEBBECA0050568A /* BTableView.cpp */; };
+		12498EAE1DEBBF5F0050568A /* BTableView.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E541DEBBECA0050568A /* BTableView.h */; };
+		12498EAF1DEBBF6B0050568A /* HNEditBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E551DEBBECA0050568A /* HNEditBox.cpp */; };
+		12498EB01DEBBF6B0050568A /* HNEditBox.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E561DEBBECA0050568A /* HNEditBox.h */; };
+		12498EB11DEBBF6B0050568A /* HNLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E571DEBBECA0050568A /* HNLayer.cpp */; };
+		12498EB21DEBBF6B0050568A /* HNLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E581DEBBECA0050568A /* HNLayer.h */; };
+		12498EB31DEBBF6B0050568A /* HNLayerColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E591DEBBECA0050568A /* HNLayerColor.cpp */; };
+		12498EB41DEBBF6B0050568A /* HNLayerColor.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5A1DEBBECA0050568A /* HNLayerColor.h */; };
+		12498EB51DEBBF6B0050568A /* HNNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5B1DEBBECA0050568A /* HNNode.cpp */; };
+		12498EB61DEBBF6B0050568A /* HNNode.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5C1DEBBECA0050568A /* HNNode.h */; };
+		12498EB71DEBBF6B0050568A /* HNScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5D1DEBBECA0050568A /* HNScene.cpp */; };
+		12498EB81DEBBF6B0050568A /* HNScene.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5E1DEBBECA0050568A /* HNScene.h */; };
+		12498EB91DEBBF6B0050568A /* HNSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E5F1DEBBECA0050568A /* HNSprite.cpp */; };
+		12498EBA1DEBBF6B0050568A /* HNSprite.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E601DEBBECA0050568A /* HNSprite.h */; };
+		12498EBB1DEBBF6B0050568A /* ClipSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E621DEBBECA0050568A /* ClipSprite.cpp */; };
+		12498EBC1DEBBF6B0050568A /* ClipSprite.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E631DEBBECA0050568A /* ClipSprite.h */; };
+		12498EBF1DEBBF6B0050568A /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E661DEBBECA0050568A /* Effect.cpp */; };
+		12498EC01DEBBF6B0050568A /* Effect.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E671DEBBECA0050568A /* Effect.h */; };
+		12498EC11DEBBF6B0050568A /* HNDialogBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E681DEBBECA0050568A /* HNDialogBase.cpp */; };
+		12498EC21DEBBF6B0050568A /* HNDialogBase.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E691DEBBECA0050568A /* HNDialogBase.h */; };
+		12498EC31DEBBF6B0050568A /* HNShake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6A1DEBBECA0050568A /* HNShake.cpp */; };
+		12498EC41DEBBF6B0050568A /* HNShake.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6B1DEBBECA0050568A /* HNShake.h */; };
+		12498EC51DEBBF6B0050568A /* LoadingLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6C1DEBBECA0050568A /* LoadingLayer.cpp */; };
+		12498EC61DEBBF6B0050568A /* LoadingLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6D1DEBBECA0050568A /* LoadingLayer.h */; };
+		12498EC71DEBBF6B0050568A /* MyProgressTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6E1DEBBECA0050568A /* MyProgressTimer.cpp */; };
+		12498EC81DEBBF6B0050568A /* MyProgressTimer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E6F1DEBBECA0050568A /* MyProgressTimer.h */; };
+		12498ECB1DEBBF6B0050568A /* TextSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E721DEBBECA0050568A /* TextSprite.cpp */; };
+		12498ECC1DEBBF6B0050568A /* TextSprite.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E731DEBBECA0050568A /* TextSprite.h */; };
+		12498ECD1DEBBF6B0050568A /* TextureLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E741DEBBECA0050568A /* TextureLayer.cpp */; };
+		12498ECE1DEBBF6B0050568A /* TextureLayer.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E751DEBBECA0050568A /* TextureLayer.h */; };
+		12498ECF1DEBBF6B0050568A /* UIGoldRain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E761DEBBECA0050568A /* UIGoldRain.cpp */; };
+		12498ED01DEBBF6B0050568A /* UIGoldRain.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E771DEBBECA0050568A /* UIGoldRain.h */; };
+		12498ED11DEBBF6B0050568A /* UserHead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E781DEBBECA0050568A /* UserHead.cpp */; };
+		12498ED21DEBBF6B0050568A /* UserHead.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E791DEBBECA0050568A /* UserHead.h */; };
+		12498ED31DEBBF6B0050568A /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12498E7B1DEBBECA0050568A /* Tools.cpp */; };
+		12498ED41DEBBF6B0050568A /* Tools.h in Sources */ = {isa = PBXBuildFile; fileRef = 12498E7C1DEBBECA0050568A /* Tools.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12498DF91DEBBD2C0050568A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		123DEE4D1DFA6C2B0033B2A1 /* libLibEngine_desktop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibEngine_desktop.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12498DFB1DEBBD2C0050568A /* libLibEngine_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLibEngine_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		12498E091DEBBECA0050568A /* HNAudioEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNAudioEngine.cpp; sourceTree = "<group>"; };
+		12498E0A1DEBBECA0050568A /* HNAudioEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNAudioEngine.h; sourceTree = "<group>"; };
+		12498E0D1DEBBECA0050568A /* JsonParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = JsonParser.cpp; sourceTree = "<group>"; };
+		12498E0E1DEBBECA0050568A /* JsonParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
+		12498E101DEBBECA0050568A /* XMLParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = XMLParser.cpp; sourceTree = "<group>"; };
+		12498E111DEBBECA0050568A /* XMLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		12498E131DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E151DEBBECA0050568A /* ApplicationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplicationMacro.h; sourceTree = "<group>"; };
+		12498E161DEBBECA0050568A /* HNCommonMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNCommonMarco.h; sourceTree = "<group>"; };
+		12498E171DEBBECA0050568A /* HNBaseType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNBaseType.h; sourceTree = "<group>"; };
+		12498E181DEBBECA0050568A /* HNEngineExport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNEngineExport.h; sourceTree = "<group>"; };
+		12498E191DEBBECA0050568A /* HNNetworkExport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNNetworkExport.h; sourceTree = "<group>"; };
+		12498E1A1DEBBECA0050568A /* HNUIExport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNUIExport.h; sourceTree = "<group>"; };
+		12498E1C1DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E1F1DEBBECA0050568A /* HNHttp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNHttp.cpp; sourceTree = "<group>"; };
+		12498E201DEBBECA0050568A /* HNHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNHttp.h; sourceTree = "<group>"; };
+		12498E221DEBBECA0050568A /* HNSocket.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocket.cpp; sourceTree = "<group>"; };
+		12498E231DEBBECA0050568A /* HNSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocket.h; sourceTree = "<group>"; };
+		12498E241DEBBECA0050568A /* HNSocketEventDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketEventDelegate.h; sourceTree = "<group>"; };
+		12498E251DEBBECA0050568A /* HNSocketLogic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketLogic.cpp; sourceTree = "<group>"; };
+		12498E261DEBBECA0050568A /* HNSocketLogic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketLogic.h; sourceTree = "<group>"; };
+		12498E271DEBBECA0050568A /* HNSocketMessage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketMessage.cpp; sourceTree = "<group>"; };
+		12498E281DEBBECA0050568A /* HNSocketMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketMessage.h; sourceTree = "<group>"; };
+		12498E291DEBBECA0050568A /* HNSocketMessageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketMessageDelegate.h; sourceTree = "<group>"; };
+		12498E2A1DEBBECA0050568A /* HNSocketProtocolData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketProtocolData.cpp; sourceTree = "<group>"; };
+		12498E2B1DEBBECA0050568A /* HNSocketProtocolData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketProtocolData.h; sourceTree = "<group>"; };
+		12498E2C1DEBBECA0050568A /* HNSocketSelector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketSelector.h; sourceTree = "<group>"; };
+		12498E2D1DEBBECA0050568A /* HNSocketThread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNSocketThread.cpp; sourceTree = "<group>"; };
+		12498E2E1DEBBECA0050568A /* HNSocketThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSocketThread.h; sourceTree = "<group>"; };
+		12498E311DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E331DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E351DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E371DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E391DEBBECA0050568A /* tmp.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = tmp.txt; sourceTree = "<group>"; };
+		12498E3B1DEBBECA0050568A /* GraphicsUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsUtils.cpp; sourceTree = "<group>"; };
+		12498E3C1DEBBECA0050568A /* GraphicsUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicsUtils.h; sourceTree = "<group>"; };
+		12498E3E1DEBBECA0050568A /* HNConverCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNConverCode.cpp; sourceTree = "<group>"; };
+		12498E3F1DEBBECA0050568A /* HNConverCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNConverCode.h; sourceTree = "<group>"; };
+		12498E401DEBBECA0050568A /* HNLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNLog.cpp; sourceTree = "<group>"; };
+		12498E411DEBBECA0050568A /* HNLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNLog.h; sourceTree = "<group>"; };
+		12498E421DEBBECA0050568A /* HNSingleAutoPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSingleAutoPtr.h; sourceTree = "<group>"; };
+		12498E431DEBBECA0050568A /* WireframeOnOff.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WireframeOnOff.cpp; sourceTree = "<group>"; };
+		12498E441DEBBECA0050568A /* WireframeOnOff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WireframeOnOff.h; sourceTree = "<group>"; };
+		12498E471DEBBECA0050568A /* ACheckBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ACheckBox.cpp; sourceTree = "<group>"; };
+		12498E481DEBBECA0050568A /* ACheckBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACheckBox.h; sourceTree = "<group>"; };
+		12498E491DEBBECA0050568A /* AControlButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AControlButton.cpp; sourceTree = "<group>"; };
+		12498E4A1DEBBECA0050568A /* AControlButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AControlButton.h; sourceTree = "<group>"; };
+		12498E4B1DEBBECA0050568A /* ASlider.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ASlider.cpp; sourceTree = "<group>"; };
+		12498E4C1DEBBECA0050568A /* ASlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASlider.h; sourceTree = "<group>"; };
+		12498E4D1DEBBECA0050568A /* ATableView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ATableView.cpp; sourceTree = "<group>"; };
+		12498E4E1DEBBECA0050568A /* ATableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATableView.h; sourceTree = "<group>"; };
+		12498E4F1DEBBECA0050568A /* ATableViewDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ATableViewDelegate.cpp; sourceTree = "<group>"; };
+		12498E501DEBBECA0050568A /* ATableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATableViewDelegate.h; sourceTree = "<group>"; };
+		12498E511DEBBECA0050568A /* AUIButton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AUIButton.cpp; sourceTree = "<group>"; };
+		12498E521DEBBECA0050568A /* AUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AUIButton.h; sourceTree = "<group>"; };
+		12498E531DEBBECA0050568A /* BTableView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BTableView.cpp; sourceTree = "<group>"; };
+		12498E541DEBBECA0050568A /* BTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTableView.h; sourceTree = "<group>"; };
+		12498E551DEBBECA0050568A /* HNEditBox.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNEditBox.cpp; sourceTree = "<group>"; };
+		12498E561DEBBECA0050568A /* HNEditBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNEditBox.h; sourceTree = "<group>"; };
+		12498E571DEBBECA0050568A /* HNLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNLayer.cpp; sourceTree = "<group>"; };
+		12498E581DEBBECA0050568A /* HNLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNLayer.h; sourceTree = "<group>"; };
+		12498E591DEBBECA0050568A /* HNLayerColor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNLayerColor.cpp; sourceTree = "<group>"; };
+		12498E5A1DEBBECA0050568A /* HNLayerColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNLayerColor.h; sourceTree = "<group>"; };
+		12498E5B1DEBBECA0050568A /* HNNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNNode.cpp; sourceTree = "<group>"; };
+		12498E5C1DEBBECA0050568A /* HNNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNNode.h; sourceTree = "<group>"; };
+		12498E5D1DEBBECA0050568A /* HNScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNScene.cpp; sourceTree = "<group>"; };
+		12498E5E1DEBBECA0050568A /* HNScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNScene.h; sourceTree = "<group>"; };
+		12498E5F1DEBBECA0050568A /* HNSprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNSprite.cpp; sourceTree = "<group>"; };
+		12498E601DEBBECA0050568A /* HNSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNSprite.h; sourceTree = "<group>"; };
+		12498E621DEBBECA0050568A /* ClipSprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClipSprite.cpp; sourceTree = "<group>"; };
+		12498E631DEBBECA0050568A /* ClipSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClipSprite.h; sourceTree = "<group>"; };
+		12498E661DEBBECA0050568A /* Effect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Effect.cpp; sourceTree = "<group>"; };
+		12498E671DEBBECA0050568A /* Effect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Effect.h; sourceTree = "<group>"; };
+		12498E681DEBBECA0050568A /* HNDialogBase.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNDialogBase.cpp; sourceTree = "<group>"; };
+		12498E691DEBBECA0050568A /* HNDialogBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNDialogBase.h; sourceTree = "<group>"; };
+		12498E6A1DEBBECA0050568A /* HNShake.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNShake.cpp; sourceTree = "<group>"; };
+		12498E6B1DEBBECA0050568A /* HNShake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNShake.h; sourceTree = "<group>"; };
+		12498E6C1DEBBECA0050568A /* LoadingLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LoadingLayer.cpp; sourceTree = "<group>"; };
+		12498E6D1DEBBECA0050568A /* LoadingLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingLayer.h; sourceTree = "<group>"; };
+		12498E6E1DEBBECA0050568A /* MyProgressTimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyProgressTimer.cpp; sourceTree = "<group>"; };
+		12498E6F1DEBBECA0050568A /* MyProgressTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProgressTimer.h; sourceTree = "<group>"; };
+		12498E721DEBBECA0050568A /* TextSprite.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextSprite.cpp; sourceTree = "<group>"; };
+		12498E731DEBBECA0050568A /* TextSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextSprite.h; sourceTree = "<group>"; };
+		12498E741DEBBECA0050568A /* TextureLayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextureLayer.cpp; sourceTree = "<group>"; };
+		12498E751DEBBECA0050568A /* TextureLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextureLayer.h; sourceTree = "<group>"; };
+		12498E761DEBBECA0050568A /* UIGoldRain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UIGoldRain.cpp; sourceTree = "<group>"; };
+		12498E771DEBBECA0050568A /* UIGoldRain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIGoldRain.h; sourceTree = "<group>"; };
+		12498E781DEBBECA0050568A /* UserHead.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UserHead.cpp; sourceTree = "<group>"; };
+		12498E791DEBBECA0050568A /* UserHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHead.h; sourceTree = "<group>"; };
+		12498E7B1DEBBECA0050568A /* Tools.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
+		12498E7C1DEBBECA0050568A /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		12498EE21DEBC14B0050568A /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../../LibEngineTest/cocos2d/build/build/Debug-iphoneos/libcocos2d iOS.a"; sourceTree = "<group>"; };
+		12E101CF1DEBCFC2003B3C31 /* libcocos2d iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d iOS.a"; path = "../../../../../../../Users/sunsongye/Library/Developer/Xcode/DerivedData/LibEngineTest-ddrgrcldxfjhttgmdceawfriupbm/Build/Products/Debug-iphoneos/libcocos2d iOS.a"; sourceTree = "<group>"; };
+		12E905BD1DF847AA002AAC7C /* libcocos2d Mac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcocos2d Mac.a"; path = "../../LibEngineTest/cocos2d/build/build/Debug/libcocos2d Mac.a"; sourceTree = "<group>"; };
+		12E905E61DF8F616002AAC7C /* HNNetMessageHead.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNNetMessageHead.h; sourceTree = "<group>"; };
+		12E906001DF8FF9B002AAC7C /* FontSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FontSize.h; sourceTree = "<group>"; };
+		12E906011DF8FF9B002AAC7C /* HNBaseCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNBaseCommand.cpp; sourceTree = "<group>"; };
+		12E906021DF8FF9B002AAC7C /* HNBaseCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNBaseCommand.h; sourceTree = "<group>"; };
+		12E906031DF8FF9B002AAC7C /* HNMemoryPool.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HNMemoryPool.cpp; sourceTree = "<group>"; };
+		12E906041DF8FF9B002AAC7C /* HNMemoryPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNMemoryPool.h; sourceTree = "<group>"; };
+		12E906051DF8FF9B002AAC7C /* HNPlatformMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNPlatformMessage.h; sourceTree = "<group>"; };
+		12E906061DF8FF9B002AAC7C /* PlatformConfig.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlatformConfig.cpp; sourceTree = "<group>"; };
+		12E906071DF8FF9B002AAC7C /* PlatformConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformConfig.h; sourceTree = "<group>"; };
+		12E906081DF8FFE5002AAC7C /* HNComStruct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNComStruct.h; sourceTree = "<group>"; };
+		12E906091DF9009A002AAC7C /* HNCommonMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNCommonMarco.h; sourceTree = "<group>"; };
+		12E9060A1DF900F3002AAC7C /* HNRoomMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HNRoomMessage.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		123DEE4A1DFA6C2B0033B2A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12498DF81DEBBD2C0050568A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12498DF21DEBBD2C0050568A = {
+			isa = PBXGroup;
+			children = (
+				12498E071DEBBECA0050568A /* Classes */,
+				12498DFC1DEBBD2C0050568A /* Products */,
+				12498EE11DEBC14B0050568A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		12498DFC1DEBBD2C0050568A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12498DFB1DEBBD2C0050568A /* libLibEngine_iOS.a */,
+				123DEE4D1DFA6C2B0033B2A1 /* libLibEngine_desktop.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12498E071DEBBECA0050568A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12E905FF1DF8FF9B002AAC7C /* tmp */,
+				12498E081DEBBECA0050568A /* audio */,
+				12498E0B1DEBBECA0050568A /* data */,
+				12498E121DEBBECA0050568A /* encryption */,
+				12498E141DEBBECA0050568A /* globel */,
+				12498E171DEBBECA0050568A /* HNBaseType.h */,
+				12498E181DEBBECA0050568A /* HNEngineExport.h */,
+				12498E191DEBBECA0050568A /* HNNetworkExport.h */,
+				12498E1A1DEBBECA0050568A /* HNUIExport.h */,
+				12498E1B1DEBBECA0050568A /* math */,
+				12498E1D1DEBBECA0050568A /* network */,
+				12498E2F1DEBBECA0050568A /* pattern */,
+				12498E361DEBBECA0050568A /* physics */,
+				12498E381DEBBECA0050568A /* platform */,
+				12498E3A1DEBBECA0050568A /* render */,
+				12498E3D1DEBBECA0050568A /* test */,
+				12498E451DEBBECA0050568A /* ui */,
+				12498E7A1DEBBECA0050568A /* utils */,
+			);
+			name = Classes;
+			path = ../Classes;
+			sourceTree = "<group>";
+		};
+		12498E081DEBBECA0050568A /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				12498E091DEBBECA0050568A /* HNAudioEngine.cpp */,
+				12498E0A1DEBBECA0050568A /* HNAudioEngine.h */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+		12498E0B1DEBBECA0050568A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				12498E0C1DEBBECA0050568A /* json */,
+				12498E0F1DEBBECA0050568A /* xml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		12498E0C1DEBBECA0050568A /* json */ = {
+			isa = PBXGroup;
+			children = (
+				12498E0D1DEBBECA0050568A /* JsonParser.cpp */,
+				12498E0E1DEBBECA0050568A /* JsonParser.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		12498E0F1DEBBECA0050568A /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				12498E101DEBBECA0050568A /* XMLParser.cpp */,
+				12498E111DEBBECA0050568A /* XMLParser.h */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		12498E121DEBBECA0050568A /* encryption */ = {
+			isa = PBXGroup;
+			children = (
+				12498E131DEBBECA0050568A /* tmp.txt */,
+			);
+			path = encryption;
+			sourceTree = "<group>";
+		};
+		12498E141DEBBECA0050568A /* globel */ = {
+			isa = PBXGroup;
+			children = (
+				12498E151DEBBECA0050568A /* ApplicationMacro.h */,
+				12498E161DEBBECA0050568A /* HNCommonMarco.h */,
+			);
+			path = globel;
+			sourceTree = "<group>";
+		};
+		12498E1B1DEBBECA0050568A /* math */ = {
+			isa = PBXGroup;
+			children = (
+				12498E1C1DEBBECA0050568A /* tmp.txt */,
+			);
+			path = math;
+			sourceTree = "<group>";
+		};
+		12498E1D1DEBBECA0050568A /* network */ = {
+			isa = PBXGroup;
+			children = (
+				12498E1E1DEBBECA0050568A /* http */,
+				12498E211DEBBECA0050568A /* socket */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		12498E1E1DEBBECA0050568A /* http */ = {
+			isa = PBXGroup;
+			children = (
+				12498E1F1DEBBECA0050568A /* HNHttp.cpp */,
+				12498E201DEBBECA0050568A /* HNHttp.h */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		12498E211DEBBECA0050568A /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				12E905E61DF8F616002AAC7C /* HNNetMessageHead.h */,
+				12498E221DEBBECA0050568A /* HNSocket.cpp */,
+				12498E231DEBBECA0050568A /* HNSocket.h */,
+				12498E241DEBBECA0050568A /* HNSocketEventDelegate.h */,
+				12498E251DEBBECA0050568A /* HNSocketLogic.cpp */,
+				12498E261DEBBECA0050568A /* HNSocketLogic.h */,
+				12498E271DEBBECA0050568A /* HNSocketMessage.cpp */,
+				12498E281DEBBECA0050568A /* HNSocketMessage.h */,
+				12498E291DEBBECA0050568A /* HNSocketMessageDelegate.h */,
+				12498E2A1DEBBECA0050568A /* HNSocketProtocolData.cpp */,
+				12498E2B1DEBBECA0050568A /* HNSocketProtocolData.h */,
+				12498E2C1DEBBECA0050568A /* HNSocketSelector.h */,
+				12498E2D1DEBBECA0050568A /* HNSocketThread.cpp */,
+				12498E2E1DEBBECA0050568A /* HNSocketThread.h */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
+		12498E2F1DEBBECA0050568A /* pattern */ = {
+			isa = PBXGroup;
+			children = (
+				12498E301DEBBECA0050568A /* command */,
+				12498E321DEBBECA0050568A /* mvc */,
+				12498E341DEBBECA0050568A /* state */,
+			);
+			path = pattern;
+			sourceTree = "<group>";
+		};
+		12498E301DEBBECA0050568A /* command */ = {
+			isa = PBXGroup;
+			children = (
+				12498E311DEBBECA0050568A /* tmp.txt */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		12498E321DEBBECA0050568A /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				12498E331DEBBECA0050568A /* tmp.txt */,
+			);
+			path = mvc;
+			sourceTree = "<group>";
+		};
+		12498E341DEBBECA0050568A /* state */ = {
+			isa = PBXGroup;
+			children = (
+				12498E351DEBBECA0050568A /* tmp.txt */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
+		12498E361DEBBECA0050568A /* physics */ = {
+			isa = PBXGroup;
+			children = (
+				12498E371DEBBECA0050568A /* tmp.txt */,
+			);
+			path = physics;
+			sourceTree = "<group>";
+		};
+		12498E381DEBBECA0050568A /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				12498E391DEBBECA0050568A /* tmp.txt */,
+			);
+			path = platform;
+			sourceTree = "<group>";
+		};
+		12498E3A1DEBBECA0050568A /* render */ = {
+			isa = PBXGroup;
+			children = (
+				12498E3B1DEBBECA0050568A /* GraphicsUtils.cpp */,
+				12498E3C1DEBBECA0050568A /* GraphicsUtils.h */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		12498E3D1DEBBECA0050568A /* test */ = {
+			isa = PBXGroup;
+			children = (
+				12498E3E1DEBBECA0050568A /* HNConverCode.cpp */,
+				12498E3F1DEBBECA0050568A /* HNConverCode.h */,
+				12498E401DEBBECA0050568A /* HNLog.cpp */,
+				12498E411DEBBECA0050568A /* HNLog.h */,
+				12498E421DEBBECA0050568A /* HNSingleAutoPtr.h */,
+				12498E431DEBBECA0050568A /* WireframeOnOff.cpp */,
+				12498E441DEBBECA0050568A /* WireframeOnOff.h */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		12498E451DEBBECA0050568A /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				12498E461DEBBECA0050568A /* base */,
+				12498E611DEBBECA0050568A /* extensions */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		12498E461DEBBECA0050568A /* base */ = {
+			isa = PBXGroup;
+			children = (
+				12498E471DEBBECA0050568A /* ACheckBox.cpp */,
+				12498E481DEBBECA0050568A /* ACheckBox.h */,
+				12498E491DEBBECA0050568A /* AControlButton.cpp */,
+				12498E4A1DEBBECA0050568A /* AControlButton.h */,
+				12498E4B1DEBBECA0050568A /* ASlider.cpp */,
+				12498E4C1DEBBECA0050568A /* ASlider.h */,
+				12498E4D1DEBBECA0050568A /* ATableView.cpp */,
+				12498E4E1DEBBECA0050568A /* ATableView.h */,
+				12498E4F1DEBBECA0050568A /* ATableViewDelegate.cpp */,
+				12498E501DEBBECA0050568A /* ATableViewDelegate.h */,
+				12498E511DEBBECA0050568A /* AUIButton.cpp */,
+				12498E521DEBBECA0050568A /* AUIButton.h */,
+				12498E531DEBBECA0050568A /* BTableView.cpp */,
+				12498E541DEBBECA0050568A /* BTableView.h */,
+				12498E551DEBBECA0050568A /* HNEditBox.cpp */,
+				12498E561DEBBECA0050568A /* HNEditBox.h */,
+				12498E571DEBBECA0050568A /* HNLayer.cpp */,
+				12498E581DEBBECA0050568A /* HNLayer.h */,
+				12498E591DEBBECA0050568A /* HNLayerColor.cpp */,
+				12498E5A1DEBBECA0050568A /* HNLayerColor.h */,
+				12498E5B1DEBBECA0050568A /* HNNode.cpp */,
+				12498E5C1DEBBECA0050568A /* HNNode.h */,
+				12498E5D1DEBBECA0050568A /* HNScene.cpp */,
+				12498E5E1DEBBECA0050568A /* HNScene.h */,
+				12498E5F1DEBBECA0050568A /* HNSprite.cpp */,
+				12498E601DEBBECA0050568A /* HNSprite.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		12498E611DEBBECA0050568A /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				12498E621DEBBECA0050568A /* ClipSprite.cpp */,
+				12498E631DEBBECA0050568A /* ClipSprite.h */,
+				12498E661DEBBECA0050568A /* Effect.cpp */,
+				12498E671DEBBECA0050568A /* Effect.h */,
+				12498E681DEBBECA0050568A /* HNDialogBase.cpp */,
+				12498E691DEBBECA0050568A /* HNDialogBase.h */,
+				12498E6A1DEBBECA0050568A /* HNShake.cpp */,
+				12498E6B1DEBBECA0050568A /* HNShake.h */,
+				12498E6C1DEBBECA0050568A /* LoadingLayer.cpp */,
+				12498E6D1DEBBECA0050568A /* LoadingLayer.h */,
+				12498E6E1DEBBECA0050568A /* MyProgressTimer.cpp */,
+				12498E6F1DEBBECA0050568A /* MyProgressTimer.h */,
+				12498E721DEBBECA0050568A /* TextSprite.cpp */,
+				12498E731DEBBECA0050568A /* TextSprite.h */,
+				12498E741DEBBECA0050568A /* TextureLayer.cpp */,
+				12498E751DEBBECA0050568A /* TextureLayer.h */,
+				12498E761DEBBECA0050568A /* UIGoldRain.cpp */,
+				12498E771DEBBECA0050568A /* UIGoldRain.h */,
+				12498E781DEBBECA0050568A /* UserHead.cpp */,
+				12498E791DEBBECA0050568A /* UserHead.h */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		12498E7A1DEBBECA0050568A /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				12498E7B1DEBBECA0050568A /* Tools.cpp */,
+				12498E7C1DEBBECA0050568A /* Tools.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		12498EE11DEBC14B0050568A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E905BD1DF847AA002AAC7C /* libcocos2d Mac.a */,
+				12E101CF1DEBCFC2003B3C31 /* libcocos2d iOS.a */,
+				12498EE21DEBC14B0050568A /* libcocos2d iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12E905FF1DF8FF9B002AAC7C /* tmp */ = {
+			isa = PBXGroup;
+			children = (
+				12E906001DF8FF9B002AAC7C /* FontSize.h */,
+				12E906011DF8FF9B002AAC7C /* HNBaseCommand.cpp */,
+				12E906021DF8FF9B002AAC7C /* HNBaseCommand.h */,
+				12E906091DF9009A002AAC7C /* HNCommonMarco.h */,
+				12E906081DF8FFE5002AAC7C /* HNComStruct.h */,
+				12E906031DF8FF9B002AAC7C /* HNMemoryPool.cpp */,
+				12E906041DF8FF9B002AAC7C /* HNMemoryPool.h */,
+				12E906051DF8FF9B002AAC7C /* HNPlatformMessage.h */,
+				12E9060A1DF900F3002AAC7C /* HNRoomMessage.h */,
+				12E906061DF8FF9B002AAC7C /* PlatformConfig.cpp */,
+				12E906071DF8FF9B002AAC7C /* PlatformConfig.h */,
+			);
+			path = tmp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		123DEE4B1DFA6C2B0033B2A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123DEEBF1DFA6CB40033B2A1 /* FontSize.h in Headers */,
+				123DEEC01DFA6CB40033B2A1 /* HNBaseCommand.cpp in Headers */,
+				123DEEC11DFA6CB40033B2A1 /* HNBaseCommand.h in Headers */,
+				123DEEC21DFA6CB40033B2A1 /* HNCommonMarco.h in Headers */,
+				123DEEC31DFA6CB40033B2A1 /* HNComStruct.h in Headers */,
+				123DEEC41DFA6CB40033B2A1 /* HNMemoryPool.cpp in Headers */,
+				123DEEC51DFA6CB40033B2A1 /* HNMemoryPool.h in Headers */,
+				123DEEC61DFA6CB40033B2A1 /* HNPlatformMessage.h in Headers */,
+				123DEEC71DFA6CB40033B2A1 /* HNRoomMessage.h in Headers */,
+				123DEEC81DFA6CB40033B2A1 /* PlatformConfig.cpp in Headers */,
+				123DEEC91DFA6CB40033B2A1 /* PlatformConfig.h in Headers */,
+				123DEECA1DFA6CB40033B2A1 /* HNAudioEngine.cpp in Headers */,
+				123DEECB1DFA6CB40033B2A1 /* HNAudioEngine.h in Headers */,
+				123DEECC1DFA6CB40033B2A1 /* JsonParser.cpp in Headers */,
+				123DEECD1DFA6CB40033B2A1 /* JsonParser.h in Headers */,
+				123DEECE1DFA6CB40033B2A1 /* XMLParser.cpp in Headers */,
+				123DEECF1DFA6CB40033B2A1 /* XMLParser.h in Headers */,
+				123DEED01DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEED11DFA6CB40033B2A1 /* ApplicationMacro.h in Headers */,
+				123DEED21DFA6CB40033B2A1 /* HNCommonMarco.h in Headers */,
+				123DEED31DFA6CB40033B2A1 /* HNBaseType.h in Headers */,
+				123DEED41DFA6CB40033B2A1 /* HNEngineExport.h in Headers */,
+				123DEED51DFA6CB40033B2A1 /* HNNetworkExport.h in Headers */,
+				123DEED61DFA6CB40033B2A1 /* HNUIExport.h in Headers */,
+				123DEED71DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEED81DFA6CB40033B2A1 /* HNHttp.cpp in Headers */,
+				123DEED91DFA6CB40033B2A1 /* HNHttp.h in Headers */,
+				123DEEDA1DFA6CB40033B2A1 /* HNNetMessageHead.h in Headers */,
+				123DEEDB1DFA6CB40033B2A1 /* HNSocket.cpp in Headers */,
+				123DEEDC1DFA6CB40033B2A1 /* HNSocket.h in Headers */,
+				123DEEDD1DFA6CB40033B2A1 /* HNSocketEventDelegate.h in Headers */,
+				123DEEDE1DFA6CB40033B2A1 /* HNSocketLogic.cpp in Headers */,
+				123DEEDF1DFA6CB40033B2A1 /* HNSocketLogic.h in Headers */,
+				123DEEE01DFA6CB40033B2A1 /* HNSocketMessage.cpp in Headers */,
+				123DEEE11DFA6CB40033B2A1 /* HNSocketMessage.h in Headers */,
+				123DEEE21DFA6CB40033B2A1 /* HNSocketMessageDelegate.h in Headers */,
+				123DEEE31DFA6CB40033B2A1 /* HNSocketProtocolData.cpp in Headers */,
+				123DEEE41DFA6CB40033B2A1 /* HNSocketProtocolData.h in Headers */,
+				123DEEE51DFA6CB40033B2A1 /* HNSocketSelector.h in Headers */,
+				123DEEE61DFA6CB40033B2A1 /* HNSocketThread.cpp in Headers */,
+				123DEEE71DFA6CB40033B2A1 /* HNSocketThread.h in Headers */,
+				123DEEE81DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEEE91DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEEEA1DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEEEB1DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEEEC1DFA6CB40033B2A1 /* tmp.txt in Headers */,
+				123DEEED1DFA6CB40033B2A1 /* GraphicsUtils.cpp in Headers */,
+				123DEEEE1DFA6CB40033B2A1 /* GraphicsUtils.h in Headers */,
+				123DEEEF1DFA6CB40033B2A1 /* HNConverCode.cpp in Headers */,
+				123DEEF01DFA6CB40033B2A1 /* HNConverCode.h in Headers */,
+				123DEEF11DFA6CB40033B2A1 /* HNLog.cpp in Headers */,
+				123DEEF21DFA6CB40033B2A1 /* HNLog.h in Headers */,
+				123DEEF31DFA6CB40033B2A1 /* HNSingleAutoPtr.h in Headers */,
+				123DEEF41DFA6CB40033B2A1 /* WireframeOnOff.cpp in Headers */,
+				123DEEF51DFA6CB40033B2A1 /* WireframeOnOff.h in Headers */,
+				123DEEF61DFA6CB40033B2A1 /* ACheckBox.cpp in Headers */,
+				123DEEF71DFA6CB40033B2A1 /* ACheckBox.h in Headers */,
+				123DEEF81DFA6CB40033B2A1 /* AControlButton.cpp in Headers */,
+				123DEEF91DFA6CB40033B2A1 /* AControlButton.h in Headers */,
+				123DEEFA1DFA6CB40033B2A1 /* ASlider.cpp in Headers */,
+				123DEEFB1DFA6CB40033B2A1 /* ASlider.h in Headers */,
+				123DEEFC1DFA6CB40033B2A1 /* ATableView.cpp in Headers */,
+				123DEEFD1DFA6CB40033B2A1 /* ATableView.h in Headers */,
+				123DEEFE1DFA6CB40033B2A1 /* ATableViewDelegate.cpp in Headers */,
+				123DEEFF1DFA6CB40033B2A1 /* ATableViewDelegate.h in Headers */,
+				123DEF001DFA6CB40033B2A1 /* AUIButton.cpp in Headers */,
+				123DEF011DFA6CB40033B2A1 /* AUIButton.h in Headers */,
+				123DEF021DFA6CB40033B2A1 /* BTableView.cpp in Headers */,
+				123DEF031DFA6CB40033B2A1 /* BTableView.h in Headers */,
+				123DEF041DFA6CB40033B2A1 /* HNEditBox.cpp in Headers */,
+				123DEF051DFA6CB40033B2A1 /* HNEditBox.h in Headers */,
+				123DEF061DFA6CB40033B2A1 /* HNLayer.cpp in Headers */,
+				123DEF071DFA6CB40033B2A1 /* HNLayer.h in Headers */,
+				123DEF081DFA6CB40033B2A1 /* HNLayerColor.cpp in Headers */,
+				123DEF091DFA6CB40033B2A1 /* HNLayerColor.h in Headers */,
+				123DEF0A1DFA6CB40033B2A1 /* HNNode.cpp in Headers */,
+				123DEF0B1DFA6CB40033B2A1 /* HNNode.h in Headers */,
+				123DEF0C1DFA6CB40033B2A1 /* HNScene.cpp in Headers */,
+				123DEF0D1DFA6CB40033B2A1 /* HNScene.h in Headers */,
+				123DEF0E1DFA6CB40033B2A1 /* HNSprite.cpp in Headers */,
+				123DEF0F1DFA6CB40033B2A1 /* HNSprite.h in Headers */,
+				123DEF101DFA6CB40033B2A1 /* ClipSprite.cpp in Headers */,
+				123DEF111DFA6CB40033B2A1 /* ClipSprite.h in Headers */,
+				123DEF121DFA6CB40033B2A1 /* Effect.cpp in Headers */,
+				123DEF131DFA6CB40033B2A1 /* Effect.h in Headers */,
+				123DEF141DFA6CB40033B2A1 /* HNDialogBase.cpp in Headers */,
+				123DEF151DFA6CB40033B2A1 /* HNDialogBase.h in Headers */,
+				123DEF161DFA6CB40033B2A1 /* HNShake.cpp in Headers */,
+				123DEF171DFA6CB40033B2A1 /* HNShake.h in Headers */,
+				123DEF181DFA6CB40033B2A1 /* LoadingLayer.cpp in Headers */,
+				123DEF191DFA6CB40033B2A1 /* LoadingLayer.h in Headers */,
+				123DEF1A1DFA6CB40033B2A1 /* MyProgressTimer.cpp in Headers */,
+				123DEF1B1DFA6CB40033B2A1 /* MyProgressTimer.h in Headers */,
+				123DEF1C1DFA6CB40033B2A1 /* TextSprite.cpp in Headers */,
+				123DEF1D1DFA6CB40033B2A1 /* TextSprite.h in Headers */,
+				123DEF1E1DFA6CB40033B2A1 /* TextureLayer.cpp in Headers */,
+				123DEF1F1DFA6CB40033B2A1 /* TextureLayer.h in Headers */,
+				123DEF201DFA6CB40033B2A1 /* UIGoldRain.cpp in Headers */,
+				123DEF211DFA6CB40033B2A1 /* UIGoldRain.h in Headers */,
+				123DEF221DFA6CB40033B2A1 /* UserHead.cpp in Headers */,
+				123DEF231DFA6CB40033B2A1 /* UserHead.h in Headers */,
+				123DEF241DFA6CB40033B2A1 /* Tools.cpp in Headers */,
+				123DEF251DFA6CB40033B2A1 /* Tools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		123DEE4C1DFA6C2B0033B2A1 /* LibEngine_desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 123DEE551DFA6C2B0033B2A1 /* Build configuration list for PBXNativeTarget "LibEngine_desktop" */;
+			buildPhases = (
+				123DEE491DFA6C2B0033B2A1 /* Sources */,
+				123DEE4A1DFA6C2B0033B2A1 /* Frameworks */,
+				123DEE4B1DFA6C2B0033B2A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibEngine_desktop;
+			productName = LibEngine_desktop;
+			productReference = 123DEE4D1DFA6C2B0033B2A1 /* libLibEngine_desktop.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		12498DFA1DEBBD2C0050568A /* LibEngine_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12498E041DEBBD2C0050568A /* Build configuration list for PBXNativeTarget "LibEngine_iOS" */;
+			buildPhases = (
+				12498DF71DEBBD2C0050568A /* Sources */,
+				12498DF91DEBBD2C0050568A /* CopyFiles */,
+				12498DF81DEBBD2C0050568A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibEngine_iOS;
+			productName = LibEngine;
+			productReference = 12498DFB1DEBBD2C0050568A /* libLibEngine_iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12498DF31DEBBD2C0050568A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sunsong Ye";
+				TargetAttributes = {
+					123DEE4C1DFA6C2B0033B2A1 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					12498DFA1DEBBD2C0050568A = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 12498DF61DEBBD2C0050568A /* Build configuration list for PBXProject "LibEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12498DF21DEBBD2C0050568A;
+			productRefGroup = 12498DFC1DEBBD2C0050568A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12498DFA1DEBBD2C0050568A /* LibEngine_iOS */,
+				123DEE4C1DFA6C2B0033B2A1 /* LibEngine_desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		123DEE491DFA6C2B0033B2A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123DEE581DFA6CA40033B2A1 /* FontSize.h in Sources */,
+				123DEE591DFA6CA40033B2A1 /* HNBaseCommand.cpp in Sources */,
+				123DEE5A1DFA6CA40033B2A1 /* HNBaseCommand.h in Sources */,
+				123DEE5B1DFA6CA40033B2A1 /* HNCommonMarco.h in Sources */,
+				123DEE5C1DFA6CA40033B2A1 /* HNComStruct.h in Sources */,
+				123DEE5D1DFA6CA40033B2A1 /* HNMemoryPool.cpp in Sources */,
+				123DEE5E1DFA6CA40033B2A1 /* HNMemoryPool.h in Sources */,
+				123DEE5F1DFA6CA40033B2A1 /* HNPlatformMessage.h in Sources */,
+				123DEE601DFA6CA40033B2A1 /* HNRoomMessage.h in Sources */,
+				123DEE611DFA6CA40033B2A1 /* PlatformConfig.cpp in Sources */,
+				123DEE621DFA6CA40033B2A1 /* PlatformConfig.h in Sources */,
+				123DEE631DFA6CA40033B2A1 /* HNAudioEngine.cpp in Sources */,
+				123DEE641DFA6CA40033B2A1 /* HNAudioEngine.h in Sources */,
+				123DEE651DFA6CA40033B2A1 /* JsonParser.cpp in Sources */,
+				123DEE661DFA6CA40033B2A1 /* JsonParser.h in Sources */,
+				123DEE671DFA6CA40033B2A1 /* XMLParser.cpp in Sources */,
+				123DEE681DFA6CA40033B2A1 /* XMLParser.h in Sources */,
+				123DEE691DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE6A1DFA6CA40033B2A1 /* ApplicationMacro.h in Sources */,
+				123DEE6B1DFA6CA40033B2A1 /* HNCommonMarco.h in Sources */,
+				123DEE6C1DFA6CA40033B2A1 /* HNBaseType.h in Sources */,
+				123DEE6D1DFA6CA40033B2A1 /* HNEngineExport.h in Sources */,
+				123DEE6E1DFA6CA40033B2A1 /* HNNetworkExport.h in Sources */,
+				123DEE6F1DFA6CA40033B2A1 /* HNUIExport.h in Sources */,
+				123DEE701DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE711DFA6CA40033B2A1 /* HNHttp.cpp in Sources */,
+				123DEE721DFA6CA40033B2A1 /* HNHttp.h in Sources */,
+				123DEE731DFA6CA40033B2A1 /* HNNetMessageHead.h in Sources */,
+				123DEE741DFA6CA40033B2A1 /* HNSocket.cpp in Sources */,
+				123DEE751DFA6CA40033B2A1 /* HNSocket.h in Sources */,
+				123DEE761DFA6CA40033B2A1 /* HNSocketEventDelegate.h in Sources */,
+				123DEE771DFA6CA40033B2A1 /* HNSocketLogic.cpp in Sources */,
+				123DEE781DFA6CA40033B2A1 /* HNSocketLogic.h in Sources */,
+				123DEE791DFA6CA40033B2A1 /* HNSocketMessage.cpp in Sources */,
+				123DEE7A1DFA6CA40033B2A1 /* HNSocketMessage.h in Sources */,
+				123DEE7B1DFA6CA40033B2A1 /* HNSocketMessageDelegate.h in Sources */,
+				123DEE7C1DFA6CA40033B2A1 /* HNSocketProtocolData.cpp in Sources */,
+				123DEE7D1DFA6CA40033B2A1 /* HNSocketProtocolData.h in Sources */,
+				123DEE7E1DFA6CA40033B2A1 /* HNSocketSelector.h in Sources */,
+				123DEE7F1DFA6CA40033B2A1 /* HNSocketThread.cpp in Sources */,
+				123DEE801DFA6CA40033B2A1 /* HNSocketThread.h in Sources */,
+				123DEE811DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE821DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE831DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE841DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE851DFA6CA40033B2A1 /* tmp.txt in Sources */,
+				123DEE861DFA6CA40033B2A1 /* GraphicsUtils.cpp in Sources */,
+				123DEE871DFA6CA40033B2A1 /* GraphicsUtils.h in Sources */,
+				123DEE881DFA6CA40033B2A1 /* HNConverCode.cpp in Sources */,
+				123DEE891DFA6CA40033B2A1 /* HNConverCode.h in Sources */,
+				123DEE8A1DFA6CA40033B2A1 /* HNLog.cpp in Sources */,
+				123DEE8B1DFA6CA40033B2A1 /* HNLog.h in Sources */,
+				123DEE8C1DFA6CA40033B2A1 /* HNSingleAutoPtr.h in Sources */,
+				123DEE8D1DFA6CA40033B2A1 /* WireframeOnOff.cpp in Sources */,
+				123DEE8E1DFA6CA40033B2A1 /* WireframeOnOff.h in Sources */,
+				123DEE8F1DFA6CA40033B2A1 /* ACheckBox.cpp in Sources */,
+				123DEE901DFA6CA40033B2A1 /* ACheckBox.h in Sources */,
+				123DEE911DFA6CA40033B2A1 /* AControlButton.cpp in Sources */,
+				123DEE921DFA6CA40033B2A1 /* AControlButton.h in Sources */,
+				123DEE931DFA6CA40033B2A1 /* ASlider.cpp in Sources */,
+				123DEE941DFA6CA40033B2A1 /* ASlider.h in Sources */,
+				123DEE951DFA6CA40033B2A1 /* ATableView.cpp in Sources */,
+				123DEE961DFA6CA40033B2A1 /* ATableView.h in Sources */,
+				123DEE971DFA6CA40033B2A1 /* ATableViewDelegate.cpp in Sources */,
+				123DEE981DFA6CA40033B2A1 /* ATableViewDelegate.h in Sources */,
+				123DEE991DFA6CA40033B2A1 /* AUIButton.cpp in Sources */,
+				123DEE9A1DFA6CA40033B2A1 /* AUIButton.h in Sources */,
+				123DEE9B1DFA6CA40033B2A1 /* BTableView.cpp in Sources */,
+				123DEE9C1DFA6CA40033B2A1 /* BTableView.h in Sources */,
+				123DEE9D1DFA6CA40033B2A1 /* HNEditBox.cpp in Sources */,
+				123DEE9E1DFA6CA40033B2A1 /* HNEditBox.h in Sources */,
+				123DEE9F1DFA6CA40033B2A1 /* HNLayer.cpp in Sources */,
+				123DEEA01DFA6CA40033B2A1 /* HNLayer.h in Sources */,
+				123DEEA11DFA6CA40033B2A1 /* HNLayerColor.cpp in Sources */,
+				123DEEA21DFA6CA40033B2A1 /* HNLayerColor.h in Sources */,
+				123DEEA31DFA6CA40033B2A1 /* HNNode.cpp in Sources */,
+				123DEEA41DFA6CA40033B2A1 /* HNNode.h in Sources */,
+				123DEEA51DFA6CA40033B2A1 /* HNScene.cpp in Sources */,
+				123DEEA61DFA6CA40033B2A1 /* HNScene.h in Sources */,
+				123DEEA71DFA6CA40033B2A1 /* HNSprite.cpp in Sources */,
+				123DEEA81DFA6CA40033B2A1 /* HNSprite.h in Sources */,
+				123DEEA91DFA6CA40033B2A1 /* ClipSprite.cpp in Sources */,
+				123DEEAA1DFA6CA40033B2A1 /* ClipSprite.h in Sources */,
+				123DEEAB1DFA6CA40033B2A1 /* Effect.cpp in Sources */,
+				123DEEAC1DFA6CA40033B2A1 /* Effect.h in Sources */,
+				123DEEAD1DFA6CA40033B2A1 /* HNDialogBase.cpp in Sources */,
+				123DEEAE1DFA6CA40033B2A1 /* HNDialogBase.h in Sources */,
+				123DEEAF1DFA6CA40033B2A1 /* HNShake.cpp in Sources */,
+				123DEEB01DFA6CA40033B2A1 /* HNShake.h in Sources */,
+				123DEEB11DFA6CA40033B2A1 /* LoadingLayer.cpp in Sources */,
+				123DEEB21DFA6CA40033B2A1 /* LoadingLayer.h in Sources */,
+				123DEEB31DFA6CA40033B2A1 /* MyProgressTimer.cpp in Sources */,
+				123DEEB41DFA6CA40033B2A1 /* MyProgressTimer.h in Sources */,
+				123DEEB51DFA6CA40033B2A1 /* TextSprite.cpp in Sources */,
+				123DEEB61DFA6CA40033B2A1 /* TextSprite.h in Sources */,
+				123DEEB71DFA6CA40033B2A1 /* TextureLayer.cpp in Sources */,
+				123DEEB81DFA6CA40033B2A1 /* TextureLayer.h in Sources */,
+				123DEEB91DFA6CA40033B2A1 /* UIGoldRain.cpp in Sources */,
+				123DEEBA1DFA6CA40033B2A1 /* UIGoldRain.h in Sources */,
+				123DEEBB1DFA6CA40033B2A1 /* UserHead.cpp in Sources */,
+				123DEEBC1DFA6CA40033B2A1 /* UserHead.h in Sources */,
+				123DEEBD1DFA6CA40033B2A1 /* Tools.cpp in Sources */,
+				123DEEBE1DFA6CA40033B2A1 /* Tools.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12498DF71DEBBD2C0050568A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12498EAF1DEBBF6B0050568A /* HNEditBox.cpp in Sources */,
+				12498EB01DEBBF6B0050568A /* HNEditBox.h in Sources */,
+				12498EB11DEBBF6B0050568A /* HNLayer.cpp in Sources */,
+				12498EB21DEBBF6B0050568A /* HNLayer.h in Sources */,
+				12498EB31DEBBF6B0050568A /* HNLayerColor.cpp in Sources */,
+				12498EB41DEBBF6B0050568A /* HNLayerColor.h in Sources */,
+				12498EB51DEBBF6B0050568A /* HNNode.cpp in Sources */,
+				12498EB61DEBBF6B0050568A /* HNNode.h in Sources */,
+				12498EB71DEBBF6B0050568A /* HNScene.cpp in Sources */,
+				12498EB81DEBBF6B0050568A /* HNScene.h in Sources */,
+				12498EB91DEBBF6B0050568A /* HNSprite.cpp in Sources */,
+				12498EBA1DEBBF6B0050568A /* HNSprite.h in Sources */,
+				12498EBB1DEBBF6B0050568A /* ClipSprite.cpp in Sources */,
+				12498EBC1DEBBF6B0050568A /* ClipSprite.h in Sources */,
+				12498EBF1DEBBF6B0050568A /* Effect.cpp in Sources */,
+				12498EC01DEBBF6B0050568A /* Effect.h in Sources */,
+				12498EC11DEBBF6B0050568A /* HNDialogBase.cpp in Sources */,
+				12498EC21DEBBF6B0050568A /* HNDialogBase.h in Sources */,
+				12498EC31DEBBF6B0050568A /* HNShake.cpp in Sources */,
+				12498EC41DEBBF6B0050568A /* HNShake.h in Sources */,
+				12498EC51DEBBF6B0050568A /* LoadingLayer.cpp in Sources */,
+				12498EC61DEBBF6B0050568A /* LoadingLayer.h in Sources */,
+				12498EC71DEBBF6B0050568A /* MyProgressTimer.cpp in Sources */,
+				12498EC81DEBBF6B0050568A /* MyProgressTimer.h in Sources */,
+				12498ECB1DEBBF6B0050568A /* TextSprite.cpp in Sources */,
+				12498ECC1DEBBF6B0050568A /* TextSprite.h in Sources */,
+				12498ECD1DEBBF6B0050568A /* TextureLayer.cpp in Sources */,
+				12498ECE1DEBBF6B0050568A /* TextureLayer.h in Sources */,
+				12498ECF1DEBBF6B0050568A /* UIGoldRain.cpp in Sources */,
+				12498ED01DEBBF6B0050568A /* UIGoldRain.h in Sources */,
+				12498ED11DEBBF6B0050568A /* UserHead.cpp in Sources */,
+				12498ED21DEBBF6B0050568A /* UserHead.h in Sources */,
+				12498ED31DEBBF6B0050568A /* Tools.cpp in Sources */,
+				12498ED41DEBBF6B0050568A /* Tools.h in Sources */,
+				12498E981DEBBF5F0050568A /* GraphicsUtils.cpp in Sources */,
+				12498E991DEBBF5F0050568A /* GraphicsUtils.h in Sources */,
+				12498E9A1DEBBF5F0050568A /* HNConverCode.cpp in Sources */,
+				12498E9B1DEBBF5F0050568A /* HNConverCode.h in Sources */,
+				12498E9C1DEBBF5F0050568A /* HNLog.cpp in Sources */,
+				12498E9D1DEBBF5F0050568A /* HNLog.h in Sources */,
+				12498E9E1DEBBF5F0050568A /* HNSingleAutoPtr.h in Sources */,
+				12498E9F1DEBBF5F0050568A /* WireframeOnOff.cpp in Sources */,
+				12498EA01DEBBF5F0050568A /* WireframeOnOff.h in Sources */,
+				12498EA11DEBBF5F0050568A /* ACheckBox.cpp in Sources */,
+				12498EA21DEBBF5F0050568A /* ACheckBox.h in Sources */,
+				12498EA31DEBBF5F0050568A /* AControlButton.cpp in Sources */,
+				12498EA41DEBBF5F0050568A /* AControlButton.h in Sources */,
+				12498EA51DEBBF5F0050568A /* ASlider.cpp in Sources */,
+				12498EA61DEBBF5F0050568A /* ASlider.h in Sources */,
+				12498EA71DEBBF5F0050568A /* ATableView.cpp in Sources */,
+				12498EA81DEBBF5F0050568A /* ATableView.h in Sources */,
+				12498EA91DEBBF5F0050568A /* ATableViewDelegate.cpp in Sources */,
+				12498EAA1DEBBF5F0050568A /* ATableViewDelegate.h in Sources */,
+				12498EAB1DEBBF5F0050568A /* AUIButton.cpp in Sources */,
+				12498EAC1DEBBF5F0050568A /* AUIButton.h in Sources */,
+				12498EAD1DEBBF5F0050568A /* BTableView.cpp in Sources */,
+				12498EAE1DEBBF5F0050568A /* BTableView.h in Sources */,
+				12498E841DEBBF460050568A /* HNCommonMarco.h in Sources */,
+				12498E851DEBBF460050568A /* HNBaseType.h in Sources */,
+				12498E861DEBBF460050568A /* HNEngineExport.h in Sources */,
+				12498E871DEBBF460050568A /* HNNetworkExport.h in Sources */,
+				12498E881DEBBF460050568A /* HNUIExport.h in Sources */,
+				12498E891DEBBF460050568A /* HNHttp.cpp in Sources */,
+				12498E8A1DEBBF460050568A /* HNHttp.h in Sources */,
+				12498E8B1DEBBF460050568A /* HNSocket.cpp in Sources */,
+				12498E8C1DEBBF460050568A /* HNSocket.h in Sources */,
+				12498E8D1DEBBF460050568A /* HNSocketEventDelegate.h in Sources */,
+				12498E8E1DEBBF460050568A /* HNSocketLogic.cpp in Sources */,
+				12498E8F1DEBBF460050568A /* HNSocketLogic.h in Sources */,
+				12498E901DEBBF460050568A /* HNSocketMessage.cpp in Sources */,
+				12498E911DEBBF460050568A /* HNSocketMessage.h in Sources */,
+				12498E921DEBBF460050568A /* HNSocketMessageDelegate.h in Sources */,
+				12498E931DEBBF460050568A /* HNSocketProtocolData.cpp in Sources */,
+				12498E941DEBBF460050568A /* HNSocketProtocolData.h in Sources */,
+				12498E951DEBBF460050568A /* HNSocketSelector.h in Sources */,
+				12498E961DEBBF460050568A /* HNSocketThread.cpp in Sources */,
+				12498E971DEBBF460050568A /* HNSocketThread.h in Sources */,
+				12498E7D1DEBBF370050568A /* HNAudioEngine.cpp in Sources */,
+				12498E7E1DEBBF370050568A /* HNAudioEngine.h in Sources */,
+				12498E7F1DEBBF370050568A /* JsonParser.cpp in Sources */,
+				12498E801DEBBF370050568A /* JsonParser.h in Sources */,
+				12498E811DEBBF370050568A /* XMLParser.cpp in Sources */,
+				12498E821DEBBF370050568A /* XMLParser.h in Sources */,
+				12498E831DEBBF370050568A /* ApplicationMacro.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		123DEE561DFA6C2B0033B2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/extensions",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../Classes",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/glfw3/include/mac",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		123DEE571DFA6C2B0033B2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "-";
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = YES;
+				GCC_ENABLE_CPP_RTTI = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/extensions",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../Classes",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/glfw3/include/mac",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		12498E021DEBBD2C0050568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../LibEngineTest/cocos2d",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/extensions",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../Classes",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12498E031DEBBD2C0050568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../LibEngineTest/cocos2d",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/extensions",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../Classes",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12498E051DEBBD2C0050568A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../LibEngineTest/cocos2d",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/extensions",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../Classes",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		12498E061DEBBD2C0050568A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../LibEngineTest/cocos2d",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/extensions",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/cocos/editor-support",
+					"$(SRCROOT)/../../LibEngineTest/cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../Classes",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		123DEE551DFA6C2B0033B2A1 /* Build configuration list for PBXNativeTarget "LibEngine_desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				123DEE561DFA6C2B0033B2A1 /* Debug */,
+				123DEE571DFA6C2B0033B2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12498DF61DEBBD2C0050568A /* Build configuration list for PBXProject "LibEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12498E021DEBBD2C0050568A /* Debug */,
+				12498E031DEBBD2C0050568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12498E041DEBBD2C0050568A /* Build configuration list for PBXNativeTarget "LibEngine_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12498E051DEBBD2C0050568A /* Debug */,
+				12498E061DEBBD2C0050568A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12498DF31DEBBD2C0050568A /* Project object */;
+}
