@@ -1,6 +1,35 @@
 #ifndef _TEST_RESOURCE_H_
 #define _TEST_RESOURCE_H_
 
+//////////////////////////////////////////////////////////////////////////玩家头像
+#define PLAYER_HEAD									"test/head/%d.png"
+//#define DEFAULT_PLAYER_HEAD							"common/default_head.png"
+#define HEAD_CIRCLE									"test/clipsprite/head-portrait4.png"
+#define HEAD_STENCIL								"test/clipsprite/head-portrait3.png"
+#define BRNN_SET_SCROLL_BAR_BALL					"test/slider/5.png"
+#define BRNN_SET_SCROLL_BAR_BG						"test/slider/4.png"
+#define BRNN_SET_SCROLL_BAR_FOREBG					"test/slider/6.png"
+#define TOOLBAR_NEXT_EXIT							"test/checkbox/tool_next_out.png"
+#define TOOLBAR_CHECKBOX							"test/checkbox/tool_check.png"
+//////////////////////////////////////////////////////////////////////////位图字体test
+#define FNT_YELLOW_ZERO			  	 		 		 "test/fnt_number/yellow0.png"
+#define FNT_YELLOW_ONE			  	 				"test/fnt_number/yellow1.png"
+#define FNT_YELLOW_TWO			  	 				"test/fnt_number/yellow2.png"
+#define FNT_YELLOW_THREE			  	 			"test/fnt_number/yellow3.png"
+#define FNT_BLUE_ZERO			  	 				"test/fnt_number/blue0.png"
+#define FNT_BLUE_ONE			  	 				"test/fnt_number/blue1.png"
+#define FNT_RED_ZERO			  	 				"test/fnt_number/red0.png"
+
+#define ANIMATION_VS_HIT_CSB						"common/animation/goldflower/goldflower_Vs/goldflower_hit.csb"
+
+#define BRNN_SET_BG								 "test/set/1.png"
+#define BRNN_SET_SOUND							 "test/set/3.png"
+#define BRNN_SET_MUSIC							 "test/set/2.png"
+#define BRNN_SET_SCROLL_BAR_BALL				 "test/set/5.png"
+#define BRNN_SET_SCROLL_BAR_BG					 "test/set/4.png"
+#define BRNN_SET_SCROLL_BAR_FOREBG				 "test/set/6.png"
+
+//==========================================
 static const char s_pathGrossini[]       = "Images/grossini.png";
 static const char s_pathSister1[]        = "Images/grossinis_sister1.png";
 static const char s_pathSister2[]        = "Images/grossinis_sister2.png";

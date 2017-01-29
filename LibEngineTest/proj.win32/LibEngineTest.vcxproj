@@ -79,7 +79,7 @@
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
       <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -149,8 +149,22 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\framework\controller.cpp" />
     <ClCompile Include="..\Classes\framework\testBasic.cpp" />
     <ClCompile Include="..\Classes\framework\VisibleRect.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\test\ApplicationTest\ApplicationTest.cpp" />
+    <ClCompile Include="..\Classes\test\ButtonTest\ButtonTest.cpp" />
+    <ClCompile Include="..\Classes\test\CheckBox\CheckBoxTest.cpp" />
+    <ClCompile Include="..\Classes\test\CocosStudioTest\CocosStudioTest.cpp" />
+    <ClCompile Include="..\Classes\test\CycScrollViewTest\CycScrollViewTest.cpp" />
+    <ClCompile Include="..\Classes\test\EffectTest\EffectTest.cpp" />
+    <ClCompile Include="..\Classes\test\LabelTest\LabelTest.cpp" />
+    <ClCompile Include="..\Classes\test\pattern\component\Composite.cpp" />
+    <ClCompile Include="..\Classes\test\ProgressTimerTest\ProgressTimerTest.cpp" />
+    <ClCompile Include="..\Classes\test\PVRTest\PVRTest.cpp" />
+    <ClCompile Include="..\Classes\test\RotateMenuTest\RotateMenuTest.cpp" />
+    <ClCompile Include="..\Classes\test\SliderTest\SliderTest.cpp" />
+    <ClCompile Include="..\Classes\test\SoundTest\SoundTest.cpp" />
     <ClCompile Include="..\Classes\test\SpriteTest\SpriteTest.cpp" />
+    <ClCompile Include="..\Classes\test\TableViewTest\TableViewTest.cpp" />
+    <ClCompile Include="..\Classes\test\TestScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -161,8 +175,22 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\framework\testResource.h" />
     <ClInclude Include="..\Classes\framework\tests.h" />
     <ClInclude Include="..\Classes\framework\VisibleRect.h" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\test\ApplicationTest\ApplicationTest.h" />
+    <ClInclude Include="..\Classes\test\ButtonTest\ButtonTest.h" />
+    <ClInclude Include="..\Classes\test\CheckBox\CheckBoxTest.h" />
+    <ClInclude Include="..\Classes\test\CocosStudioTest\CocosStudioTest.h" />
+    <ClInclude Include="..\Classes\test\CycScrollViewTest\CycScrollViewTest.h" />
+    <ClInclude Include="..\Classes\test\EffectTest\EffectTest.h" />
+    <ClInclude Include="..\Classes\test\LabelTest\LabelTest.h" />
+    <ClInclude Include="..\Classes\test\pattern\component\Composite.h" />
+    <ClInclude Include="..\Classes\test\ProgressTimerTest\ProgressTimerTest.h" />
+    <ClInclude Include="..\Classes\test\PVRTest\PVRTest.h" />
+    <ClInclude Include="..\Classes\test\RotateMenuTest\RotateMenuTest.h" />
+    <ClInclude Include="..\Classes\test\SliderTest\SliderTest.h" />
+    <ClInclude Include="..\Classes\test\SoundTest\SoundTest.h" />
     <ClInclude Include="..\Classes\test\SpriteTest\SpriteTest.h" />
+    <ClInclude Include="..\Classes\test\TableViewTest\TableViewTest.h" />
+    <ClInclude Include="..\Classes\test\TestScene.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>

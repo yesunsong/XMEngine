@@ -19,15 +19,57 @@
     <Filter Include="src\test\SpriteTest">
       <UniqueIdentifier>{65bcfc69-b44d-44da-aa7c-29ec76656ee1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\test\pattern">
+      <UniqueIdentifier>{6cc801d1-516c-4818-af9c-152a05ded4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\pattern\component">
+      <UniqueIdentifier>{41a47ba4-58bf-47eb-bdfd-476e3b0e070b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\SliderTest">
+      <UniqueIdentifier>{0a70ade8-d20d-4a0d-9bc7-e258f34cac2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\LabelTest">
+      <UniqueIdentifier>{fbb76c8b-a56a-45ce-bebd-3dff546c241a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\CheckBoxTest">
+      <UniqueIdentifier>{3fcfed7e-c113-49cc-b17d-c313f9650daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\PVRTest">
+      <UniqueIdentifier>{5dd32395-6004-4784-969f-d8d1db4f241b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\EffectTest">
+      <UniqueIdentifier>{2f30d66a-ffd6-4dbf-bab6-1a436a1f89c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\ButtonTest">
+      <UniqueIdentifier>{df31cbd0-7066-4513-bc5c-e344bf6c9dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\CocosStudioTest">
+      <UniqueIdentifier>{a5bf4183-1f40-40cc-bd6a-e74ecfb7e8e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\ApplicationTest">
+      <UniqueIdentifier>{1da09dec-d654-4fe7-8a95-59057c0e8831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\SoundTest">
+      <UniqueIdentifier>{7b250574-8e39-468c-a1f8-ac35534aad3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\TableViewTest">
+      <UniqueIdentifier>{dfa1c134-c79b-4246-9b96-bcf7370c2703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\CycScrollView">
+      <UniqueIdentifier>{026ce433-d1a9-460f-bac1-741ad9c494c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\RotateMenuTest">
+      <UniqueIdentifier>{4ab6b1c8-8fd4-49aa-8e21-45bfdcf64d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\test\ProgressTimerTest">
+      <UniqueIdentifier>{5969714e-846f-476c-a88e-63eb60fd9baf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>win32</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\framework\BaseTest.cpp">
@@ -45,15 +87,55 @@
     <ClCompile Include="..\Classes\test\SpriteTest\SpriteTest.cpp">
       <Filter>src\test\SpriteTest</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\test\pattern\component\Composite.cpp">
+      <Filter>src\test\pattern\component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\TestScene.cpp" />
+    <ClCompile Include="..\Classes\test\SliderTest\SliderTest.cpp">
+      <Filter>src\test\SliderTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\CheckBox\CheckBoxTest.cpp">
+      <Filter>src\test\CheckBoxTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\LabelTest\LabelTest.cpp">
+      <Filter>src\test\LabelTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\PVRTest\PVRTest.cpp">
+      <Filter>src\test\PVRTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\EffectTest\EffectTest.cpp">
+      <Filter>src\test\EffectTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\ButtonTest\ButtonTest.cpp">
+      <Filter>src\test\ButtonTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\ApplicationTest\ApplicationTest.cpp">
+      <Filter>src\test\ApplicationTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\CocosStudioTest\CocosStudioTest.cpp">
+      <Filter>src\test\CocosStudioTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\SoundTest\SoundTest.cpp">
+      <Filter>src\test\SoundTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\TableViewTest\TableViewTest.cpp">
+      <Filter>src\test\TableViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\CycScrollViewTest\CycScrollViewTest.cpp">
+      <Filter>src\test\CycScrollView</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\RotateMenuTest\RotateMenuTest.cpp">
+      <Filter>src\test\RotateMenuTest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\test\ProgressTimerTest\ProgressTimerTest.cpp">
+      <Filter>src\test\ProgressTimerTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\framework\BaseTest.h">
@@ -65,9 +147,6 @@
     <ClInclude Include="..\Classes\framework\testBasic.h">
       <Filter>src\framework</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\framework\testResource.h">
-      <Filter>src\framework</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\framework\tests.h">
       <Filter>src\framework</Filter>
     </ClInclude>
@@ -76,6 +155,52 @@
     </ClInclude>
     <ClInclude Include="..\Classes\test\SpriteTest\SpriteTest.h">
       <Filter>src\test\SpriteTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\pattern\component\Composite.h">
+      <Filter>src\test\pattern\component</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\TestScene.h" />
+    <ClInclude Include="..\Classes\test\SliderTest\SliderTest.h">
+      <Filter>src\test\SliderTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\CheckBox\CheckBoxTest.h">
+      <Filter>src\test\CheckBoxTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\LabelTest\LabelTest.h">
+      <Filter>src\test\LabelTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\framework\testResource.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\PVRTest\PVRTest.h">
+      <Filter>src\test\PVRTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\EffectTest\EffectTest.h">
+      <Filter>src\test\EffectTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\ButtonTest\ButtonTest.h">
+      <Filter>src\test\ButtonTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\ApplicationTest\ApplicationTest.h">
+      <Filter>src\test\ApplicationTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\CocosStudioTest\CocosStudioTest.h">
+      <Filter>src\test\CocosStudioTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\SoundTest\SoundTest.h">
+      <Filter>src\test\SoundTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\TableViewTest\TableViewTest.h">
+      <Filter>src\test\TableViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\CycScrollViewTest\CycScrollViewTest.h">
+      <Filter>src\test\CycScrollView</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\RotateMenuTest\RotateMenuTest.h">
+      <Filter>src\test\RotateMenuTest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\test\ProgressTimerTest\ProgressTimerTest.h">
+      <Filter>src\test\ProgressTimerTest</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

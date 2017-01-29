@@ -1,8 +1,4 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
-
-#include "test/HNLog.h"
-
 USING_NS_CC;
 
 static cocos2d::Size designResolutionSize = cocos2d::Size(1024, 768);
@@ -67,14 +63,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     register_all_packages();
-
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
-    director->runWithScene(scene);
-
-    //HN::HNLog::logInfo("hn test");
 
     _testController = TestController::getInstance();
 
