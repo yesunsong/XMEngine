@@ -62,7 +62,7 @@ bool Effect::initWithSpine(const std::string &skeletonDataFile,
     type = SPINE_EFFECT;
     skeletonNode =
         SkeletonAnimation::createWithFile(skeletonDataFile, atlasFile, scale);
-    skeletonNode->ignoreAnchorPointForPosition(true);
+    skeletonNode->setIgnoreAnchorPointForPosition(true);
     //  skeletonNode->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
     addChild(skeletonNode);
     return true;
@@ -72,7 +72,7 @@ bool Effect::initWithParticle(const char *filename) {
     if (!Node::init()) {
         return false;
     }
-    this->ignoreAnchorPointForPosition(true);
+    this->setIgnoreAnchorPointForPosition(true);
     type = PARTICLE_EFFECT;
     particle = ParticleSystemQuad::create(filename);
     addChild(particle);

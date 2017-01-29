@@ -1,7 +1,23 @@
-//#include "stdafx.h"
+#pragma once
 #include "MyProgressTimer.h"
 
 USING_NS_CC;
+
+MyProgressTimer::MyProgressTimer() {
+    m_pSpr = nullptr;
+    _vertexData = nullptr;
+    _vertexDataCount = 0;
+    m_fPercentage = 0.0f;
+};
+
+MyProgressTimer::~MyProgressTimer() {
+    if (m_pSpr) {
+        CC_SAFE_RELEASE(m_pSpr);
+    }
+    if (_vertexData) {
+        CC_SAFE_FREE(_vertexData);
+    }
+};
 
 MyProgressTimer* MyProgressTimer::create(Sprite* sp) {
     MyProgressTimer *progressTimer = new (std::nothrow) MyProgressTimer();
@@ -21,34 +37,58 @@ bool MyProgressTimer::initWithSprite(Sprite* sp) {
     setOrigin(Vec2(0.05f, 0.05f));
     setTop(Vec2(0.95f, 0.95f));
 
-    setAnchorPoint(Vec2(0.5f, 0.5f));
+    setAnchorPoint(Vec2(0.5f,0.5f));
 
     setGLProgramState(GLProgramState::getOrCreateWithGLProgramName(GLProgram::SHADER_NAME_POSITION_TEXTURE_COLOR));
 
     m_type = ProgressType::None;
 
     setPercentage(0.0f);
+//    ProgressFromTo;
 
-    //ProgressFromTo;
+    m_Forebackground = nullptr;
+    isDrawForebackground = false;
+    count = 0;
+    prePercent = 0;
+    m_WarningPercent = 75.0f;
+
+    opac[0] = 1;
+    opac[0] = 127;
 
     return true;
 }
 
 void MyProgressTimer::onDraw(const Mat4 &transform, uint32_t flags) {
+
     getGLProgram()->use();
     getGLProgram()->setUniformsForBuiltins(transform);
 
     GL::blendFunc(m_pSpr->getBlendFunc().src, m_pSpr->getBlendFunc().dst);
-
     GL::enableVertexAttribs(GL::VERTEX_ATTRIB_FLAG_POS_COLOR_TEX);
-
     GL::bindTexture2D(m_pSpr->getTexture()->getName());
-
     glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_POSITION, 2, GL_FLOAT, GL_FALSE, sizeof(_vertexData[0]), &_vertexData[0].vertices);
     glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_TEX_COORD, 2, GL_FLOAT, GL_FALSE, sizeof(_vertexData[0]), &_vertexData[0].texCoords);
     glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(_vertexData[0]), &_vertexData[0].colors);
     glDrawArrays(GL_TRIANGLE_STRIP, 0, _vertexDataCount);
     CC_INCREMENT_GL_DRAWN_BATCHES_AND_VERTICES(1, _vertexDataCount);
+
+    //
+    if(isDrawForebackground) {
+        if (_vertexData) {
+            for (int i = 0; i < _vertexDataCount; ++i) {
+                _vertexData[i].colors.a *= m_displayedAlpha/255.0f;
+            }
+        }
+
+        GL::blendFunc(m_Forebackground->getBlendFunc().src, m_Forebackground->getBlendFunc().dst);
+        GL::enableVertexAttribs(GL::VERTEX_ATTRIB_FLAG_POS_COLOR_TEX);
+        GL::bindTexture2D(m_Forebackground->getTexture()->getName());
+        glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_POSITION, 2, GL_FLOAT, GL_FALSE, sizeof(_vertexData[0]), &_vertexData[0].vertices);
+        glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_TEX_COORD, 2, GL_FLOAT, GL_FALSE, sizeof(_vertexData[0]), &_vertexData[0].texCoords);
+        glVertexAttribPointer(GLProgram::VERTEX_ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(_vertexData[0]), &_vertexData[0].colors);
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, _vertexDataCount);
+        CC_INCREMENT_GL_DRAWN_BATCHES_AND_VERTICES(1, _vertexDataCount);
+    }
 }
 
 void MyProgressTimer::draw(Renderer *renderer, const Mat4& transform, uint32_t flags) {
@@ -74,6 +114,14 @@ void MyProgressTimer::setSprite(Sprite *sprite) {
     }
 }
 
+void MyProgressTimer::setForebackground(Sprite *sprite) {
+    if (m_Forebackground != sprite) {
+        CC_SAFE_RETAIN(sprite);
+        CC_SAFE_RELEASE(m_Forebackground);
+        m_Forebackground = sprite;
+    }
+}
+
 void MyProgressTimer::updateColor(void) {
     if (!m_pSpr) {
         return;
@@ -93,8 +141,8 @@ cocos2d::Tex2F MyProgressTimer::textureCoordFromAlphaPoint(Vec2 alpha) {
         return ret;
     }
     V3F_C4B_T2F_Quad quad = m_pSpr->getQuad();
-    Vec2 max = Vec2(quad.bl.texCoords.u, quad.bl.texCoords.v);
-    Vec2 min = Vec2(quad.tr.texCoords.u, quad.tr.texCoords.v);
+    Vec2 min = Vec2(quad.bl.texCoords.u, quad.bl.texCoords.v);
+    Vec2 max = Vec2(quad.tr.texCoords.u, quad.tr.texCoords.v);
     //  Fix bug #1303 so that progress timer handles sprite frame texture rotation
     if (m_pSpr->isTextureRectRotated()) {
         CC_SWAP(alpha.x, alpha.y, float);
@@ -108,8 +156,8 @@ cocos2d::Vec2 MyProgressTimer::vertexFromAlphaPoint(Vec2 alpha) {
         return ret;
     }
     V3F_C4B_T2F_Quad quad = m_pSpr->getQuad();
-    Vec2 max = Vec2(quad.bl.vertices.x, quad.bl.vertices.y);
-    Vec2 min = Vec2(quad.tr.vertices.x, quad.tr.vertices.y);
+    Vec2 min = Vec2(quad.bl.vertices.x, quad.bl.vertices.y);
+    Vec2 max = Vec2(quad.tr.vertices.x, quad.tr.vertices.y);
     ret.x = min.x * (1.f - alpha.x) + max.x * alpha.x;
     ret.y = min.y * (1.f - alpha.y) + max.y * alpha.y;
     return ret;
@@ -129,6 +177,30 @@ Vec2 MyProgressTimer::boundaryTexCoord(char index) {
 void MyProgressTimer::setPercentage(float percentage) {
     m_fPercentage = clampf(percentage, 0, 100);
     updateProgress();
+    updateColor();
+
+    //
+
+    if(m_fPercentage < m_WarningPercent) {
+        m_displayedAlpha = 0;
+        isDrawForebackground = false;
+    } else if((m_fPercentage - prePercent) > 0.8) {
+        isDrawForebackground = true;
+        prePercent = m_fPercentage;
+        count++;
+        if(count > 10) {
+            count = 0;
+        }
+        m_displayedAlpha = opac[count%2];
+    }
+
+    if(percentage == 100.0f) {
+        m_displayedAlpha = 0;
+        prePercent = 0;
+        count = 0;
+        isDrawForebackground = false;
+    }
+
 }
 
 void MyProgressTimer::updateProgress(void) {
@@ -594,16 +666,21 @@ void MyProgressTimer::setTop(Vec2 _vTop) {
         float topY = clampf(_vTop.y, 0.5, 1);
 
         auto thisSize = m_pSpr->getContentSize();
-        auto max1 = thisSize.width * (1 - topX);
-        auto max2 = thisSize.height * (1 - topY);
+        auto max1 = thisSize.width * (1-topX);
+        auto max2 = thisSize.height * (1-topY);
         auto max3 = MAX(max1, max2);
-        m_vTop = Vec2(1 - max3 / thisSize.width, 1 - max3 / thisSize.height);
+        m_vTop = Vec2(1- max3 / thisSize.width, 1 - max3 / thisSize.height);
 
         updateProgress();
     }
+
 }
 
-MyProgressTimer::ProgressType MyProgressTimer::percentToStep(float &_pos) {
+void MyProgressTimer::setWarningPercent(float value) {
+    m_WarningPercent = value;
+}
+
+ProgressType MyProgressTimer::percentToStep(float &_pos) {
     if (m_fPercentage == 0) {
         return ProgressType::Start;
     } else if (m_fPercentage == 100) {
@@ -635,7 +712,7 @@ MyProgressTimer::ProgressType MyProgressTimer::percentToStep(float &_pos) {
 
         auto allLength = posNode[12];
 
-        auto nowPosLength = allLength*m_fPercentage / 100;
+        auto nowPosLength = allLength * m_fPercentage / 100;
 
         if (nowPosLength <= posNode[0]) {
             _pos = (nowPosLength + thisSize.width / 2) / thisSize.width;
@@ -717,6 +794,11 @@ MyProgressTimer::ProgressType MyProgressTimer::percentToStep(float &_pos) {
     return ProgressType::None;
 }
 
+float MyProgressTimer::getPercentage() {
+    return m_fPercentage;
+};
+
+//==============================
 MyProgressFromTo* MyProgressFromTo::create(float duration, float fromPercentage, float toPercentage) {
     MyProgressFromTo *progressFromTo = new (std::nothrow) MyProgressFromTo();
     progressFromTo->initWithDuration(duration, fromPercentage, toPercentage);
@@ -741,7 +823,7 @@ void MyProgressFromTo::startWithTarget(Node *target) {
 }
 
 void MyProgressFromTo::update(float time) {
-    ((MyProgressTimer*)(_target))->setPercentage(100 - (_from + (_to - _from) * time));
+    ((MyProgressTimer*)(_target))->setPercentage(_from + (_to - _from) * time);
 }
 
 bool MyProgressFromTo::initWithDuration(float duration, float fromPercentage, float toPercentage) {
@@ -754,3 +836,5 @@ bool MyProgressFromTo::initWithDuration(float duration, float fromPercentage, fl
 
     return false;
 }
+
+

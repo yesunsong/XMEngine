@@ -51,23 +51,23 @@ void GraphicsUtils::drawOutline(bool isIgnore, Vec2 anchorPoint, Vec2 position, 
     //红色：区域范围
     CHECK_GL_ERROR_DEBUG();
     glLineWidth(2);
-    DrawPrimitives::setDrawColor4F(1, 0, 0, 1);
-    DrawPrimitives::drawRect(vc1[0], vc1[2]);
-    //DrawPrimitives::drawPoly(vc1, 4, true);
-    //绿色：位置点
-    CHECK_GL_ERROR_DEBUG();
-    DrawPrimitives::setPointSize(5);
-    DrawPrimitives::setDrawColor4F(0, 1, 0, 1);
-    DrawPrimitives::drawPoint(parent->convertToNodeSpace(position));
-    //黄色：锚点
-    CHECK_GL_ERROR_DEBUG();
-    DrawPrimitives::setPointSize(10);
-    DrawPrimitives::setDrawColor4F(1, 1, 0, 1);
-    //DrawPrimitives::drawPoint(Vec2(width * anchorX, height * anchorY));
+    //DrawPrimitives::setDrawColor4F(1, 0, 0, 1);
+    //DrawPrimitives::drawRect(vc1[0], vc1[2]);
+    ////DrawPrimitives::drawPoly(vc1, 4, true);
+    ////绿色：位置点
+    //CHECK_GL_ERROR_DEBUG();
+    //DrawPrimitives::setPointSize(5);
+    //DrawPrimitives::setDrawColor4F(0, 1, 0, 1);
+    //DrawPrimitives::drawPoint(parent->convertToNodeSpace(position));
+    ////黄色：锚点
+    //CHECK_GL_ERROR_DEBUG();
+    //DrawPrimitives::setPointSize(10);
+    //DrawPrimitives::setDrawColor4F(1, 1, 0, 1);
+    ////DrawPrimitives::drawPoint(Vec2(width * anchorX, height * anchorY));
 
-    glLineWidth(1);
-    DrawPrimitives::setDrawColor4B(255, 255, 255, 255);
-    DrawPrimitives::setPointSize(1);
+    //glLineWidth(1);
+    //DrawPrimitives::setDrawColor4B(255, 255, 255, 255);
+    //DrawPrimitives::setPointSize(1);
 
     CHECK_GL_ERROR_DEBUG();
     director->popMatrix(MATRIX_STACK_TYPE::MATRIX_STACK_MODELVIEW);
@@ -82,15 +82,15 @@ void GraphicsUtils::graySprite(Sprite* sprite) {
         p->bindAttribLocation(GLProgram::ATTRIBUTE_NAME_TEX_COORD, GLProgram::VERTEX_ATTRIB_TEX_COORDS);
         p->link();
         p->updateUniforms();
-        sprite->setShaderProgram(p);
+        sprite->setGLProgram(p);
     }
 }
 
 void GraphicsUtils::recoverySprite(Sprite* sprite) {
     if (sprite != NULL) {
         std::string str = GLProgram::SHADER_NAME_POSITION_TEXTURE_COLOR_NO_MVP;
-        CCGLProgram * pProgram = CCShaderCache::sharedShaderCache()->programForKey(str);
-        sprite->setShaderProgram(pProgram);
+        GLProgram * pProgram = CCShaderCache::getInstance()->getGLProgram(str);
+        sprite->setGLProgram(pProgram);
     }
 }
 

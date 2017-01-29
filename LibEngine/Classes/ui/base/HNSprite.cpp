@@ -12,6 +12,12 @@ HNSprite::HNSprite(void) : _drawRect(false) {
 
 HNSprite::~HNSprite(void) {}
 
+void HNSprite::onExitTransitionDidStart() {
+    Sprite::onExitTransitionDidStart();
+    stopAllActions();
+    unscheduleAllCallbacks();
+}
+
 HNSprite *HNSprite::create(const std::string &filename) {
     HNSprite *sprite = new (std::nothrow) HNSprite();
     if (sprite && sprite->initWithFile(filename)) {

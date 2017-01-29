@@ -55,9 +55,10 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <MultiProcessorCompilation>false</MultiProcessorCompilation>
-      <AdditionalIncludeDirectories>..;..\..;..\..\..\LibHNNet;$(EngineRoot)extensions;$(EngineRoot)cocos\audio\include;$(EngineRoot);..\..\..\LibHNLobby;$(ProjectDir)..\Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4251;4819;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>..;..\..;$(EngineRoot)extensions;$(EngineRoot)cocos\audio\include;$(EngineRoot);$(ProjectDir)..\Classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -86,6 +87,7 @@
     <ClInclude Include="..\Classes\data\json\JsonParser.h" />
     <ClInclude Include="..\Classes\data\xml\XMLParser.h" />
     <ClInclude Include="..\Classes\globel\ApplicationMacro.h" />
+    <ClInclude Include="..\Classes\globel\FontSize.h" />
     <ClInclude Include="..\Classes\globel\HNCommonMarco.h" />
     <ClInclude Include="..\Classes\HNBaseType.h" />
     <ClInclude Include="..\Classes\HNEngineExport.h" />
@@ -100,12 +102,15 @@
     <ClInclude Include="..\Classes\network\socket\HNSocketProtocolData.h" />
     <ClInclude Include="..\Classes\network\socket\HNSocketSelector.h" />
     <ClInclude Include="..\Classes\network\socket\HNSocketThread.h" />
+    <ClInclude Include="..\Classes\pattern\command\Command.h" />
+    <ClInclude Include="..\Classes\pattern\command\CommandManager.h" />
+    <ClInclude Include="..\Classes\pattern\state\BaseState.h" />
+    <ClInclude Include="..\Classes\pattern\state\StateManager.h" />
     <ClInclude Include="..\Classes\render\GraphicsUtils.h" />
     <ClInclude Include="..\Classes\test\HNConverCode.h" />
     <ClInclude Include="..\Classes\test\HNLog.h" />
     <ClInclude Include="..\Classes\test\HNSingleAutoPtr.h" />
     <ClInclude Include="..\Classes\test\WireframeOnOff.h" />
-    <ClInclude Include="..\Classes\tmp\FontSize.h" />
     <ClInclude Include="..\Classes\tmp\HNBaseCommand.h" />
     <ClInclude Include="..\Classes\tmp\HNCommonMarco.h" />
     <ClInclude Include="..\Classes\tmp\HNComStruct.h" />
@@ -126,12 +131,19 @@
     <ClInclude Include="..\Classes\ui\base\HNNode.h" />
     <ClInclude Include="..\Classes\ui\base\HNScene.h" />
     <ClInclude Include="..\Classes\ui\base\HNSprite.h" />
+    <ClInclude Include="..\Classes\ui\extensions\CheckCSBLayer.h" />
+    <ClInclude Include="..\Classes\ui\extensions\CheckTextureLayer.h" />
     <ClInclude Include="..\Classes\ui\extensions\ClipSprite.h" />
+    <ClInclude Include="..\Classes\ui\extensions\CycScrollView.h" />
     <ClInclude Include="..\Classes\ui\extensions\Effect.h" />
     <ClInclude Include="..\Classes\ui\extensions\HNDialogBase.h" />
     <ClInclude Include="..\Classes\ui\extensions\HNShake.h" />
+    <ClInclude Include="..\Classes\ui\extensions\HRocker.h" />
     <ClInclude Include="..\Classes\ui\extensions\LoadingLayer.h" />
     <ClInclude Include="..\Classes\ui\extensions\MyProgressTimer.h" />
+    <ClInclude Include="..\Classes\ui\extensions\ParallaxScrollingLayer.h" />
+    <ClInclude Include="..\Classes\ui\extensions\RotateMenu.h" />
+    <ClInclude Include="..\Classes\ui\extensions\RotateMenuOne.h" />
     <ClInclude Include="..\Classes\ui\extensions\TextSprite.h" />
     <ClInclude Include="..\Classes\ui\extensions\TextureLayer.h" />
     <ClInclude Include="..\Classes\ui\extensions\UIGoldRain.h" />
@@ -151,6 +163,8 @@
     <ClCompile Include="..\Classes\network\socket\HNSocketMessage.cpp" />
     <ClCompile Include="..\Classes\network\socket\HNSocketProtocolData.cpp" />
     <ClCompile Include="..\Classes\network\socket\HNSocketThread.cpp" />
+    <ClCompile Include="..\Classes\pattern\command\CommandManager.cpp" />
+    <ClCompile Include="..\Classes\pattern\state\StateManager.cpp" />
     <ClCompile Include="..\Classes\render\GraphicsUtils.cpp" />
     <ClCompile Include="..\Classes\test\HNConverCode.cpp" />
     <ClCompile Include="..\Classes\test\HNLog.cpp" />
@@ -171,12 +185,19 @@
     <ClCompile Include="..\Classes\ui\base\HNNode.cpp" />
     <ClCompile Include="..\Classes\ui\base\HNScene.cpp" />
     <ClCompile Include="..\Classes\ui\base\HNSprite.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\CheckCSBLayer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\CheckTextureLayer.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\ClipSprite.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\CycScrollView.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\Effect.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\HNDialogBase.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\HNShake.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\HRocker.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\LoadingLayer.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\MyProgressTimer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\ParallaxScrollingLayer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\RotateMenu.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\RotateMenuOne.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\TextSprite.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\TextureLayer.cpp" />
     <ClCompile Include="..\Classes\ui\extensions\UIGoldRain.cpp" />
@@ -186,6 +207,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Classes\pattern\state\tmp.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

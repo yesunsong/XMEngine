@@ -15,17 +15,18 @@ using namespace HN;
 namespace HN {
 
 class HNLayer : public Layer {
+    CC_SYNTHESIZE(bool, _drawRect, DrawRect);
+
 public:
     HNLayer(void);
     virtual ~HNLayer(void);
 
+public:
     virtual bool init() override;
     virtual void onEnter() override;
     virtual void onExit() override;
-    virtual void draw(Renderer *renderer, const Mat4 &transform,
-                      uint32_t flags) override;
-    // virtual void visit(Renderer *renderer, const Mat4& parentTransform,
-    // uint32_t parentFlags);
+    virtual void onExitTransitionDidStart()override;
+    virtual void draw(Renderer *renderer, const Mat4 &transform, uint32_t flags) override;
 
 public:
     void setBackGroundImage(const std::string &name);
@@ -34,10 +35,10 @@ public:
     void quicklyShade(int opacity = 100);
     float getRealScaleX(int designWidth);
     float getRealScaleY(int designHeight);
-    bool switchToLayoutControl(Layout *layout, const std::string &controlName,
-                               Node *newControl);
+    bool switchToLayoutControl(Layout *layout, const std::string &controlName,Node *newControl);
 
-    CC_SYNTHESIZE(bool, _drawRect, DrawRect);
+public:
+    Node *m_pUIRoot;
 
 private:
     void updateOpacity(float dt);
@@ -49,10 +50,6 @@ private:
     CustomCommand _customCommand;
     void onDrawPrimatives(const cocos2d::Mat4 &transform, uint32_t flags);
     DrawNode *drawNode;
-
-    // virtual void visit()override;
-public:
-    Node *m_pUIRoot;
 };
 };
 

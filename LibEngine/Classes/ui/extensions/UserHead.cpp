@@ -37,7 +37,6 @@ bool UserHead::initWithImage(const std::string& frame) {
     // 创建一个点击事件
     auto MyListener = EventListenerTouchOneByOne::create();
     MyListener->setSwallowTouches(true);
-
     MyListener->onTouchBegan = CC_CALLBACK_2(UserHead::onTouchBegan, this);
     MyListener->onTouchEnded = CC_CALLBACK_2(UserHead::onTouchEnd, this);
     _eventDispatcher->addEventListenerWithSceneGraphPriority(MyListener, this);

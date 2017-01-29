@@ -6,8 +6,6 @@
 
 USING_NS_CC;
 
-//extern HN::XMLParser* xmlParser;
-
 namespace HN {
 
 class HNConverCode {

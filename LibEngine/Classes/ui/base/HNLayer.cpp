@@ -42,6 +42,12 @@ void HNLayer::onExit() {
     Layer::onExit();
 }
 
+void HNLayer::onExitTransitionDidStart() {
+    Layer::onExitTransitionDidStart();
+    stopAllActions();
+    unscheduleAllCallbacks();
+}
+
 void HNLayer::setBackGroundImage(const std::string &name) {
     // Vec2 win32= Director::getInstance()->getWinSize();
     auto visibleSize = Director::getInstance()->getVisibleSize();

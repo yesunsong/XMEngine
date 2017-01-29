@@ -1,9 +1,7 @@
 ﻿//#include "stdafx.h"
 #include "HNScene.h"
-//#include "HNNetExport.h"
 #include "ui/extensions/TextureLayer.h"
-#include "cocos2d.h"
-USING_NS_CC;
+#include "test/HNLog.h"
 
 namespace HN {
 
@@ -25,20 +23,29 @@ void HNScene::onEnter() {
     Scene::onEnter();
 }
 
-void HNScene::onExit() {
-    Scene::onExit();
-    unschedule(schedule_selector(HNScene::releaseLastScene));
-}
 void HNScene::onEnterTransitionDidFinish() {
     Scene::onEnterTransitionDidFinish();
-    scheduleOnce(schedule_selector(HNScene::releaseLastScene), 2.0f);
+    schedule(schedule_selector(HNScene::releaseLastScene), 1.0f);
+}
+
+void HNScene::onExit() {
+    Scene::onExit();
+}
+
+void HNScene::onExitTransitionDidStart() {
+    Scene::onExitTransitionDidStart();
+    stopAllActions();
+    unscheduleAllCallbacks();
+    AnimationCache::getInstance()->destroyInstance();
+    SpriteFrameCache::getInstance()->removeSpriteFrames();
+    Director::getInstance()->getTextureCache()->removeAllTextures();
+    this->unschedule(schedule_selector(HNScene::releaseLastScene));
 }
 
 void HNScene::releaseLastScene(float dt) {
-    AnimationCache::getInstance()->destroyInstance();
     SpriteFrameCache::getInstance()->removeUnusedSpriteFrames();
     Director::getInstance()->getTextureCache()->removeUnusedTextures();
-    //HNLog::logInfo("release last scene");
+    HNLog::logInfo("release last scene");
 }
 
 bool HNScene::init() {

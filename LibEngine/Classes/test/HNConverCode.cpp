@@ -12,17 +12,13 @@
 #include "iconv.h"
 #endif
 
-//HN::XMLParser* xmlParser =HN::XMLParser::parseWithFile("config/strings.xml");
-
 namespace HN {
 
 void HNConverCode::parseXML(const char* xml) {
-    //xmlParser = XMLParser::parseWithFile(xml);
     XMLParser::parseWithFile(xml);
 }
 
 std::string HNConverCode::getString(const char* key) {
-    //return xmlParser->getString(key);
     return UserDefault::getInstance()->getStringForKey(key);
 }
 

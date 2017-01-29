@@ -160,9 +160,6 @@
     <ClInclude Include="..\Classes\globel\HNCommonMarco.h">
       <Filter>globel</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\tmp\FontSize.h">
-      <Filter>tmp</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\tmp\HNBaseCommand.h">
       <Filter>tmp</Filter>
     </ClInclude>
@@ -237,6 +234,30 @@
     </ClInclude>
     <ClInclude Include="..\Classes\network\socket\HNSocketThread.h">
       <Filter>network\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\CycScrollView.h" />
+    <ClInclude Include="..\Classes\ui\extensions\HRocker.h" />
+    <ClInclude Include="..\Classes\ui\extensions\ParallaxScrollingLayer.h" />
+    <ClInclude Include="..\Classes\globel\FontSize.h">
+      <Filter>globel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\RotateMenu.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\CheckCSBLayer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\CheckTextureLayer.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ui\extensions\RotateMenuOne.h">
+      <Filter>ui\extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\pattern\command\Command.h">
+      <Filter>pattern\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\pattern\command\CommandManager.h">
+      <Filter>pattern\command</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -360,6 +381,24 @@
     </ClCompile>
     <ClCompile Include="..\Classes\network\socket\HNSocketThread.cpp">
       <Filter>network\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\CycScrollView.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\HRocker.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\ParallaxScrollingLayer.cpp" />
+    <ClCompile Include="..\Classes\ui\extensions\RotateMenu.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\CheckCSBLayer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\CheckTextureLayer.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ui\extensions\RotateMenuOne.cpp">
+      <Filter>ui\extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\pattern\command\CommandManager.cpp">
+      <Filter>pattern\command</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

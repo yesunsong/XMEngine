@@ -29,7 +29,7 @@ bool HNDialogBase::init(cocos2d::Node* parent) {
     }
     _parent = parent;
     _parent->addChild(this);
-    this->ignoreAnchorPointForPosition(false);
+    this->setIgnoreAnchorPointForPosition(false);
     this->setAnchorPoint(Vec2(0.5f,0.5f));
     return true;
 }
@@ -46,7 +46,7 @@ HNDialogBase::~HNDialogBase() {
 
 void HNDialogBase::locateMid(cocos2d::Node* pNode) {
     Size size = Director::getInstance()->getVisibleSize();
-    pNode->ignoreAnchorPointForPosition(false);
+    pNode->setIgnoreAnchorPointForPosition(false);
     pNode->setAnchorPoint(Vec2(0.5f,0.5f));
     pNode->setPosition(size.width / 2, size.height / 2);
 }
